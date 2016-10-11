@@ -5,4 +5,46 @@
 layout: default
 ---
 
-Hello world
+## IDEAS, DEVELOPMENT & PUNK ROCK
+
+So, here's the deal … Punk Rock Dev is an **indie web development studio**.
+We apply the DIY, no nonsense philosophy of punk rock to efficiently develop
+apps from concept to implementation. We believe that lean product development
+and smart priorities based on real data are important to build good apps
+that people will love.
+
+
+## DISCOGRAPHY
+
+Rather than spend too much space on words, here are some of our past projects …
+
+
+## THE BAND
+
+### Dražen Lučanin
+
+Hi! I'm a software developer working in the industry since 2009.
+I have experience with both web app backends in Python
+and frontends in JavaScript. Having done a PhD in computer science,
+I know my way around data analysis, visualisation and algorithms from domains
+like machine learning too – useful tools when tackling challenging problems.
+I started Punk Rock Dev to create practical apps that help people, while working
+in a fun & relaxed atmosphere.
+
+Depending on the project scope, I can assemble a team of good developers
+and designers with whom I've worked with in the past.
+
+
+## THE GIG
+
+If you'd like to work on a project together, please fill out the info below
+and we'll set up a call to discuss the details.
+Looking forward to hearing from you!
+
+What's your budget?
+
+When do you expect the project to be finished?
+
+Describe your project in a couple of sentences:
+
+Get in touch
