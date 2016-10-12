@@ -2,26 +2,19 @@
  * Site header
  */
 .site-header {
-    /* border-top: 5px solid $grey-color-dark; */
-    /* border-bottom: 1px solid $grey-color-light; */
-    /* background: url("/images/header bg + header overlay Mask.jpg"); */
-    /* /\* no-repeat center center fixed; *\/ */
-    /* background-size: 100% auto; */
-    /* min-height: 601px; */
-
     // Positioning context for the mobile navigation icon
     position: relative;
 
     .site-image {
-        position: absolute;
         width: 100%;
-        z-index: -1;
     }
 
-    .wrapper {
-        padding: 11%;
+    .site-title-wrapper {
+        z-index: 1;
+        position: absolute;
+        top: 40%;
+        width: 100%;
     }
-
 }
 
 .site-title {
