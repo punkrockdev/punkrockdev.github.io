@@ -170,6 +170,13 @@ pre {
     }
 }
 
+/**
+ * Dražen's "don't overthink it" grid
+ */
+grid {
+    width: auto;
+    /* @extend %clearfix; - already in wrapper*/
+}
 
 
 /**

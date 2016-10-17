@@ -25,11 +25,13 @@
     float: left;
     text-align: center;
     width: 100%;
+    &, &:hover { text-decoration: none; }
+    &, &:visited { color: $grey-color-dark; }
+}
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+.site-logo {
+    background: url("/images/logo.svg") no-repeat center;
+    content: "";
 }
 
 .site-subtitle {
