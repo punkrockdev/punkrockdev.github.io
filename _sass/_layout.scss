@@ -25,13 +25,14 @@
     float: left;
     text-align: center;
     width: 100%;
-    &, &:hover { text-decoration: none; }
     &, &:visited { color: $grey-color-dark; }
 }
 
 .site-logo {
     background: url("/images/logo.svg") no-repeat center;
-    content: "";
+    color: transparent;
+    min-height: 74px;
+    &, &:hover { text-decoration: none; color: transparent; }
 }
 
 .site-subtitle {
@@ -39,6 +40,9 @@
     float: left;
     text-align: center;
     width: 100%;
+    font-size: 64px;
+    font-weight: 900;
+    transform: rotate(3deg);
 }
 
 .site-nav {
