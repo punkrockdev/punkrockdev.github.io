@@ -229,11 +229,13 @@
     }
 }
 
-.post-content {
+.post-content, .page-content {
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
+        font-size: 48px;
+        font-weight: 900;
+
 
         @include media-query($on-laptop) {
             font-size: 28px;
