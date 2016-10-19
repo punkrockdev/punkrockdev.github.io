@@ -14,10 +14,10 @@
             <g>
                 <rect id="white-bg" fill="#ECECEC" x="335.926554" y="2.74074074" width="130.316384" height="68.5185185"></rect>
                 <rect id="black-rectangle" fill="#212121" x="0" y="0" width="341.429379" height="74"></rect>
-                <text id="DEV" font-family="SourceSansPro-Black, Source Sans Pro" font-size="56" font-weight="700" fill="#212121">
+                <text id="DEV" font-family="Source Sans Pro, sans-serif" font-size="56" font-weight="900" fill="#212121">
                     <tspan x="350.683616" y="55">DEV</tspan>
                 </text>
-                <text id="PUNK-ROCK" font-family="SourceSansPro-Black, Source Sans Pro" font-size="56" font-weight="700" fill="#ECECEC">
+                <text id="PUNK-ROCK" font-family="Source Sans Pro, sans-serif" font-size="56" font-weight="900" fill="#ECECEC">
                     <tspan x="20" y="55">PUNK ROCK</tspan>
                 </text>
                 <use id="black-hollow-rectangle" stroke="#212121" mask="url(#mask-2)" stroke-width="20" xlink:href="#path-1"></use>
