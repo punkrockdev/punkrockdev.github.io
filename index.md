@@ -24,16 +24,16 @@ Rather than spend too much space on words, here are some of our past projects �
 ### Dražen Lučanin
 
 Hi! I'm a software developer working in the industry since 2009.
-I have experience with both web app backends in Python
-and frontends in JavaScript. Having done a PhD in computer science,
-I know my way around data analysis, visualisation and algorithms from domains
-like machine learning too – useful tools when tackling challenging problems.
-I started Punk Rock Dev to create practical apps that help people, while working
-in a fun & relaxed atmosphere.
+I have experience with both web app backends in **Python** or **Ruby**
+and frontends in **JavaScript**. Having done a PhD in computer science,
+I know my way around **data analysis**, visualisation
+and algorithms from domains like **machine learning** too – useful tools
+when tackling challenging problems.
+I started Punk Rock Dev to create practical apps that help people,
+while working in a fun & relaxed atmosphere.
 
-Depending on the project scope, I can assemble a team of good developers
-and designers with whom I've worked with in the past.
-
+On larger projects I work with **a team of skilled developers and designers**
+to deliver the best product quickly and efficiently.
 
 ## THE GIG
 

@@ -181,6 +181,12 @@ grid {
 [class*='col-'] {
     float: left;
 }
+.col-3-5 {
+    width: 60%;
+}
+.col-1-5 {
+    width: 20%;
+}
 .col-2-3 {
     width: 66.66%;
 }

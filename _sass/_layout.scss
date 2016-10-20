@@ -34,6 +34,12 @@
     text-align: center;
     width: 100%;
     font-size: 64px;
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+    @include media-query($on-palm) {
+        font-size: 28px;
+    }
     font-weight: 900;
     transform: rotate(3deg);
 }
