@@ -18,6 +18,45 @@ that people will love.
 
 Rather than spend too much space on words, here are some of our past projects …
 
+<div class="row">
+    <div class="col-1-3">
+        <h3>POSMusic</h3>
+        <p>A music scheduling and playback app for pubs, shops & restaurants. Vist website.</p>
+    </div>
+    <div class="col-2-3">
+        <img src="/images/POSMusic.png">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-1-3">
+        <h3>CroSho</h3>
+        </p>A crowd shopping marketplace.</p>
+    </div>
+    <div class="col-2-3">
+        <img src="/images/crosho.png">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-1-3">
+        <h3>eSquirrel</h3>
+        </p>Online learning platform for high school kids.</p>
+    </div>
+        <div class="col-2-3">
+        <img src="/images/eSquirrel.png">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-1-3">
+        <h3>where2help</h3>
+        </p>A volunteer management app for helping refugees.</p>
+    </div>
+        <div class="col-2-3">
+        <img src="/images/where2help.png">
+    </div>
+</div>
 
 ## THE BAND
 
