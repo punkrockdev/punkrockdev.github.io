@@ -1,8 +1,12 @@
 ---
+# IMPORTANT - this file's content is not used,
+# use home.html instead!
+#
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
+# switch to default to render this content
 ---
 
 ## IDEAS, DEVELOPMENT & PUNK ROCK
@@ -31,7 +35,7 @@ Rather than spend too much space on words, here are some of our past projects â€
 <div class="row">
     <div class="col-1-3">
         <h3>CroSho</h3>
-        </p>A crowd shopping marketplace.</p>
+        <p>A crowd shopping marketplace.</p>
     </div>
     <div class="col-2-3">
         <img src="/images/crosho.png">
@@ -41,7 +45,7 @@ Rather than spend too much space on words, here are some of our past projects â€
 <div class="row">
     <div class="col-1-3">
         <h3>eSquirrel</h3>
-        </p>Online learning platform for high school kids.</p>
+        <p>Online learning platform for high school kids.</p>
     </div>
         <div class="col-2-3">
         <img src="/images/eSquirrel.png">
@@ -51,7 +55,7 @@ Rather than spend too much space on words, here are some of our past projects â€
 <div class="row">
     <div class="col-1-3">
         <h3>where2help</h3>
-        </p>A volunteer management app for helping refugees.</p>
+        <p>A volunteer management app for helping refugees.</p>
     </div>
         <div class="col-2-3">
         <img src="/images/where2help.png">
