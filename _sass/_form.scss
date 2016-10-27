@@ -1,0 +1,29 @@
+form {
+    /* margin: 0 auto; */
+    /* width: 400px; */
+    padding: 1em;
+    background: $grey-color-transparent;
+
+    .form-input { margin-bottom: 1em;}
+    input, textarea {
+        font: 1em $base-font-family;
+        border: none;
+        padding: 0.3em;
+    }
+    textarea {
+        margin: 1em 0; width: 100%; height: 6em;
+    }
+    input[type="range" i] {
+        display: block;
+        padding: 1em;
+        width: 100%
+    }
+    input[type="submit"] {
+        margin-top: 1em;
+        color: $accent-color;
+        border: 6px solid $accent-color;
+        background: none;
+        font-weight: 900;
+        padding: 0px 5px;
+    }
+}

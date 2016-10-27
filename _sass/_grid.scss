@@ -18,15 +18,24 @@
 [class*='col-']:last-of-type {
   padding-right: 0;
 }
-.col-3-5 {
-    width: 60%;
+
+.col-1-5 {
+    width: 20%;
+}
+.col-offset-1-5 {
+    padding-left: 20%;
 }
 .col-2-5 {
     width: 40%;
 }
-.col-1-5 {
-    width: 20%;
+.col-3-5 {
+    width: 60%;
 }
+.col-4-5 {
+    width: 80%;
+}
+
+
 .col-2-3 {
     width: 66.66%;
 }
