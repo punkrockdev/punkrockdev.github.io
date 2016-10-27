@@ -136,7 +136,7 @@ to deliver the results you want quickly and efficiently.</p>
 and we'll set up a call to discuss the details.
 Looking forward to hearing from you!</p>
 
-        <form action="http://formspree.io/info@punkrockdev.com">
+        <form action="http://formspree.io/info@punkrockdev.com" method="post">
             <div class="form-input" >
                 <label for="deadline">When do you expect your project to be finished?</label>
                 <input id="deadline" type="range" name="deadline" min="3000" max="100000" />
@@ -157,6 +157,8 @@ Looking forward to hearing from you!</p>
                 <label for="email">Your email:</label>
                 <input id="email" type="email" name="email" autocomplete="email" />
             </div>
+
+            <input type="hidden" name="_next" value="http://punkrockdev.com/thanks.html" />
 
             <input type="submit" value="Get in touch"/>
 
