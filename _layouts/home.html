@@ -132,18 +132,28 @@ to deliver the results you want quickly and efficiently.</p>
     <div class="col-4-5 col-offset-1-5">
         <h2>THE GIG</h2>
 
-        <p>If you'd like to work on a project together, please fill out the info below
+        <p>Interested in working on a project together? Awesome! Please fill out the info below
 and we'll set up a call to discuss the details.
 Looking forward to hearing from you!</p>
 
         <form action="http://formspree.io/info@punkrockdev.com" method="post">
             <div class="form-input" >
                 <label for="deadline">When do you expect your project to be finished?</label>
-                <input id="deadline" type="range" name="deadline" min="3000" max="100000" />
+                <span class="slider-value" >
+                    <output name="deadlineOut" id="deadlineOut">4</output> month(s)
+                </span>
+                <input id="deadline" type="range" name="deadline"
+                       min="1" max="18"
+                       value="4"
+                       oninput="deadlineOut.value = deadline.value" />
             </div>
             <div class="form-input" >
                 <label for="budget">What's your budget?</label>
-                <input id="budget" type="range" name="budget" />
+                <span class="slider-value" ><output name="budgetOut" id="budgetOut">20</output>k€ </span>
+                <input id="budget" type="range" name="budget"
+                       min="3" max="200"
+                       value="20"
+                       oninput="budgetOut.value = budget.value" />
             </div>
             <div class="form-input" >
                 <label for="description">Describe your project in a couple of sentences:</label>
@@ -157,6 +167,7 @@ Looking forward to hearing from you!</p>
                 <label for="email">Your email:</label>
                 <input id="email" type="email" name="email" autocomplete="email" />
             </div>
+            <input type="text" name="_gotcha" style="display:none" />
 
             <input type="hidden" name="_next" value="http://punkrockdev.com/thanks.html" />
 
