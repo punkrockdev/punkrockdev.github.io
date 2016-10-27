@@ -192,6 +192,10 @@
 /**
  * Page content
  */
+p {
+    text-align: justify;
+}
+
 .page-content {
     padding: $spacing-unit 0;
 }
@@ -265,5 +269,18 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+/**
+ * Discography
+ */
+
+.app-screenshot {
+    img {
+        border: 24px solid rgba(177,172,172,0.34);
+    }
+    p {
+        text-align: left;
     }
 }
