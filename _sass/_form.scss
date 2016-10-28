@@ -36,9 +36,37 @@ form {
         font-size: 36px;
         padding: 0px 5px;
         margin-left: 0;
+        &:hover {
+            background: rgba($accent-color, .3 )
+        }
     }
     .slider-value {
         font: 1em $base-font-family;
         margin: 0.5em;
+    }
+}
+
+#mc_embed_signup{
+    clear:left;
+    font-size: 0.7em;
+
+    form {
+        padding: 10px 10px 10px 3%;
+        background: none;
+
+        input[type="submit"] {
+            margin-top: 1em;
+            color: $accent-color;
+            border: 6px solid $accent-color;
+            background: none;
+            font-weight: 900;
+            margin-left: 0;
+            padding: 0 0.3em;
+            line-height: 1em;
+            border-radius: 0;
+            &:hover {
+                background: rgba($accent-color, .3 )
+            }
+        }
     }
 }
