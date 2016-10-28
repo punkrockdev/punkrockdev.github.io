@@ -44,6 +44,12 @@ $grey-color-transparent: rgba(177,172,172,0.34);
     }
 }
 
+@mixin media-query-min($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)

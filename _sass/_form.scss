@@ -12,6 +12,7 @@ form {
         margin-left: 1em;
         @include media-query($on-palm) {
             margin-left: 0;
+            padding: 2px;
         }
     }
     textarea {
@@ -57,7 +58,7 @@ form {
         input[type="submit"] {
             margin-top: 1em;
             color: $accent-color;
-            border: 6px solid $accent-color;
+            border: 4px solid $accent-color;
             background: none;
             font-weight: 900;
             margin-left: 0;
@@ -66,6 +67,11 @@ form {
             border-radius: 0;
             &:hover {
                 background: rgba($accent-color, .3 )
+            }
+        }
+        .mc-field-group input {
+            @include media-query($on-laptop) {
+                padding: 4px;
             }
         }
     }
