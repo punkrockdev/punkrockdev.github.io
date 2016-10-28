@@ -20,8 +20,8 @@ that your users will love.</p>
 </div>
 
 <div class="col-1-5">
-    <blockquote>“Disruptive innovation is the new punk rock”<br/>
-    — Jaime Levy</blockquote>
+    <blockquote>“Disruptive innovation<br/> is the new punk rock”<br/>
+    — <a href="http://jlrinteractive.com/">Jaime Levy</a></blockquote>
 </div>
 </div>
 
@@ -44,7 +44,7 @@ that your users will love.</p>
     <div class="app-screenshot">
         <div class="col-1-5 col-offset-1-5">
             <h3>POSMusic</h3>
-            <p>A music scheduling and playback app for pubs, shops & restaurants. (<a href="http://www.posmusic.com.au/" >web</a>)</p>
+            <p>A music scheduling and playback app for pubs, shops & restaurants. <!-- (<a href="http://www.posmusic.com.au/" >web</a>) --></p>
         </div>
         <div class="col-3-5">
             <img src="/images/POSMusic.png">
@@ -88,7 +88,7 @@ that your users will love.</p>
     </div>
 </div>
 
-<div class="row" >
+<div id="the-band" class="row" >
     <div class="col-2-5 col-offset-1-5">
         <h2>THE BAND</h2>
     </div>
@@ -97,11 +97,11 @@ that your users will love.</p>
     </div>
 </div>
 <div class="row" >
-    <div class="col-1-4-5">
+    <div class="col-1-4-5 mugshot">
         <img src="/images/ja.png">
     </div>
     <div class="col-3-4-5">
-        <h3>Dražen Lučanin</h3>
+        <h3><a href="http://metakermit.com/">Dražen Lučanin</a></h3>
 
         <p>Hi! I'm a software developer working in the industry since 2009.
 I have experience with both web app backends
@@ -129,7 +129,7 @@ to deliver the results you want quickly and efficiently.</p>
 
 
 <div class="row">
-    <div class="col-4-5 col-offset-1-5">
+    <div class="col-3-5 col-offset-1-5">
         <h2>THE GIG</h2>
 
         <p>Interested in working on a project together? Awesome! Please fill out the info below
@@ -138,7 +138,7 @@ Looking forward to hearing from you!</p>
 
         <form action="http://formspree.io/info@punkrockdev.com" method="post">
             <div class="form-input" >
-                <label for="deadline">When do you expect your project to be finished?</label>
+                <label for="deadline">When do you expect the project  delivered?</label>
                 <span class="slider-value" >
                     <output name="deadlineOut" id="deadlineOut">4</output> month(s)
                 </span>
@@ -149,7 +149,7 @@ Looking forward to hearing from you!</p>
             </div>
             <div class="form-input" >
                 <label for="budget">What's your budget?</label>
-                <span class="slider-value" ><output name="budgetOut" id="budgetOut">20</output>k€ </span>
+                <span class="slider-value" >€<output name="budgetOut" id="budgetOut">20</output>k </span>
                 <input id="budget" type="range" name="budget"
                        min="3" max="200"
                        value="20"
@@ -165,16 +165,19 @@ Looking forward to hearing from you!</p>
             </div>
             <div class="form-input" >
                 <label for="email">Your email:</label>
-                <input id="email" type="email" name="email" autocomplete="email" />
+                <input id="email" type="email" name="email" autocomplete="email" required />
             </div>
             <input type="text" name="_gotcha" style="display:none" />
-
             <input type="hidden" name="_next" value="http://punkrockdev.com/thanks.html" />
+            <input type="hidden" name="_subject" value="Punk Rock Dev Inquiry" />
 
             <input type="submit" value="Get in touch"/>
 
         </form>
 
+    </div>
+    <div class="col-1-5 doodle" id="phone-doodle">
+        <img src="/images/phone.png" >
     </div>
 </div>
 </div>
