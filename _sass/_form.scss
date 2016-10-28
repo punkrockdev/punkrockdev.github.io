@@ -10,19 +10,22 @@ form {
         border: none;
         padding: 0.3em;
         margin-left: 1em;
+        @include media-query($on-palm) {
+            margin-left: 0;
+        }
     }
     textarea {
         margin: 1em 0; width: 100%; height: 6em;
         max-width: 100%;
-    }
-    input {
-
     }
     input[type="range" i] {
         display: block;
         padding: 1em;
         width: 80%;
         margin-left: 0;
+        @include media-query($on-palm) {
+            width: 100%;
+        }
     }
     input[type="submit"] {
         margin-top: 1em;

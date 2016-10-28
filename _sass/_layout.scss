@@ -153,14 +153,16 @@
 
 .footer-col {
     float: left;
-    width: 36%;
+    width: 39%;
+    padding-left: 0.7em;
     @include media-query($on-palm) {
         width: 100%;
+        font-size: 23px;
     }
 }
 
 .footer-col-1 {
-    width: 63%;
+    width: 60%;
     @include media-query($on-palm) {
         width: 100%;
     }
@@ -175,6 +177,9 @@ p {
 
 .page-content {
     padding: $spacing-unit 0;
+    @include media-query($on-palm) {
+        padding: 0;
+    }
 }
 
 .page-heading {
@@ -294,5 +299,6 @@ p {
     @include media-query($on-palm) {
         padding-top: 0;
         position: relative;
+        width: 33%;
     }
 }
