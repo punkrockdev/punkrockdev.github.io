@@ -122,6 +122,10 @@ blockquote {
     > :last-child {
         margin-bottom: 0;
     }
+
+    @include media-query($on-palm) {
+        padding-top: 0;
+    }
 }
 
 

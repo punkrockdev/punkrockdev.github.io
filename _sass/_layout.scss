@@ -14,6 +14,9 @@
         position: absolute;
         top: 40%;
         width: 100%;
+        @include media-query($on-palm) {
+            top: 30%;
+        }
     }
 }
 
@@ -26,6 +29,11 @@
     text-align: center;
     width: 100%;
     &, &:visited { color: $grey-color-dark; }
+    @include media-query($on-palm) {
+        img {
+            width: 80%;
+        }
+    }
 }
 
 .site-subtitle {
@@ -38,7 +46,8 @@
         font-size: 36px;
     }
     @include media-query($on-palm) {
-        font-size: 28px;
+        font-size: 24px;
+        transform: rotate(1deg);
     }
     font-weight: 900;
     transform: rotate(3deg);
@@ -136,15 +145,25 @@
     width: 66%;
     margin-left: 20%;
     @extend %clearfix;
+    @include media-query($on-palm) {
+        margin-left: 0;
+        width: 60%;
+    }
 }
 
 .footer-col {
     float: left;
     width: 36%;
+    @include media-query($on-palm) {
+        width: 100%;
+    }
 }
 
 .footer-col-1 {
     width: 63%;
+    @include media-query($on-palm) {
+        width: 100%;
+    }
 }
 
 /**
@@ -204,12 +223,15 @@ p {
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 48px;
+        font-size: 42px;
         font-weight: 900;
 
 
         @include media-query($on-laptop) {
             font-size: 28px;
+        }
+        @include media-query($on-palm) {
+            width: 80%;
         }
     }
 
@@ -232,6 +254,12 @@ p {
 
 .doodle {
     padding-top: 2em;
+    @include media-query($on-palm) {
+        padding-top: 0;
+        position: absolute;
+        right: 0.5em;
+        width: 15%;
+    }
 }
 
 /**
@@ -249,12 +277,22 @@ p {
 
 .mugshot {
     padding-top: 1em;
+    @include media-query($on-palm) {
+        padding-top: 0;
+    }
 }
 
 #the-band {
     padding-top: 4em;
+    @include media-query($on-palm) {
+        padding-top: 2em;
+    }
 }
 
-#phone-doodle {
+#phone-doodle.doodle {
     padding-top: 4em;
+    @include media-query($on-palm) {
+        padding-top: 0;
+        position: relative;
+    }
 }

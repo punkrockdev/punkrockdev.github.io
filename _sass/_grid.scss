@@ -8,6 +8,9 @@
 .row {
     clear: left;
     padding: 2em 0;
+    @include media-query($on-palm) {
+        padding: 0;
+    }
 }
 
 [class*='col-'] {
@@ -21,15 +24,28 @@
 
 .col-1-5 {
     width: 20%;
+    @include media-query($on-palm) {
+        width: 100%;
+    }
 }
 .col-offset-1-5 {
     margin-left: 20%;
+    @include media-query($on-palm) {
+        margin-left: 0%;
+    }
 }
 .col-2-5 {
     width: 40%;
+    @include media-query($on-palm) {
+        width: 50%;
+    }
 }
 .col-3-5 {
     width: 60%;
+    @include media-query($on-palm) {
+        width: 100%;
+        padding: 1em 0;
+    }
 }
 .col-4-5 {
     width: 80%;
@@ -48,4 +64,7 @@
 }
 .col-3-4-5 {
     width: 53.33%;
+    @include media-query($on-palm) {
+        width: 100%;
+    }
 }
