@@ -51,6 +51,8 @@ form {
     clear:left;
     font-size: 0.7em;
 
+    p { text-align: left; }
+
     form {
         padding: 10px 10px 10px 3%;
         background: none;
@@ -74,5 +76,6 @@ form {
                 padding: 4px;
             }
         }
+
     }
 }

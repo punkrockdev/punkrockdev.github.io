@@ -173,6 +173,9 @@
  */
 p {
     text-align: justify;
+    @include media-query($on-laptop) {
+        text-align: left;
+    }
 }
 
 .page-content {
@@ -233,7 +236,7 @@ p {
 
 
         @include media-query($on-laptop) {
-            font-size: 28px;
+            font-size: 26px;
         }
         @include media-query($on-palm) {
             width: 80%;
@@ -281,9 +284,10 @@ p {
 }
 
 .mugshot {
-    padding-top: 1em;
+    padding: 1em;
     @include media-query($on-palm) {
         padding-top: 0;
+        padding-left: 0;
     }
 }
 

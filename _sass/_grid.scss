@@ -74,7 +74,6 @@
         display: none;
     }
 }
-
 .hide-palm {
     @include media-query($on-palm) {
         display: none;
@@ -83,6 +82,11 @@
 
 .show-palm {
     @include media-query-min($on-palm) {
+        display: none;
+    }
+}
+.show-laptop {
+    @include media-query-min($on-laptop) {
         display: none;
     }
 }
