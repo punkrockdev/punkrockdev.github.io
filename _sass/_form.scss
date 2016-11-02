@@ -5,13 +5,12 @@ form {
     background: $grey-color-transparent;
 
     .form-input { margin-bottom: 1em;}
+    label { margin-right: 1em; }
     input, textarea {
         font: 1em $base-font-family;
         border: none;
         padding: 0.3em;
-        margin-left: 1em;
         @include media-query($on-palm) {
-            margin-left: 0;
             padding: 2px;
         }
     }
@@ -44,6 +43,10 @@ form {
     .slider-value {
         font: 1em $base-font-family;
         margin: 0.5em;
+        @include media-query($on-laptop) {
+            margin: 0em;
+            width: 100%;
+        }
     }
 }
 

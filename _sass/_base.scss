@@ -26,7 +26,7 @@ body {
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 
-    @include media-query($on-palm) {
+    @include media-query($on-laptop) {
         font-size: $base-font-size-mobile;
     }
 }

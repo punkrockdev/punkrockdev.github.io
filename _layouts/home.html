@@ -25,7 +25,7 @@ that your users will love.
 </div>
 
 <div class="col-1-5">
-    <blockquote>“Disruptive innovation<br/> is the new punk rock”<br/>
+    <blockquote>“Disruptive innovation is the new punk rock”<br/>
     — <a href="http://jlrinteractive.com/">Jaime Levy</a></blockquote>
 </div>
 </div>
@@ -102,8 +102,8 @@ that your users will love.
     </div>
 </div>
 <div class="row" >
-    <div class="col-1-4-5 mugshot">
-        <img src="/images/ja.png">
+    <div class="col-1-4-5">
+        <img src="/images/ja.png" class="mugshot">
     </div>
     <div class="col-3-4-5">
         <h3><a href="http://metakermit.com/">Dražen Lučanin</a></h3>
@@ -143,6 +143,14 @@ Looking forward to hearing from you!</p>
 
         <form action="http://formspree.io/info@punkrockdev.com" method="post">
             <div class="form-input" >
+                <label for="name">Your name:</label>
+                <input id="name" type="text" name="name" autocomplete="name" />
+            </div>
+            <div class="form-input" >
+                <label for="email">Your email:</label>
+                <input id="email" type="email" name="email" autocomplete="email" required />
+            </div>
+            <div class="form-input" >
                 <label for="deadline">When do you expect the project  delivered?</label>
                 <span class="slider-value" >
                     <output name="deadlineOut" id="deadlineOut">4</output> month(s)
@@ -153,7 +161,7 @@ Looking forward to hearing from you!</p>
                        oninput="deadlineOut.value = deadline.value" />
             </div>
             <div class="form-input" >
-                <label for="budget">What's your budget?</label>
+                <label for="budget">Roughly, what's your project budget?</label>
                 <span class="slider-value" >€<output name="budgetOut" id="budgetOut">20</output>k </span>
                 <input id="budget" type="range" name="budget"
                        min="3" max="200"
@@ -163,14 +171,6 @@ Looking forward to hearing from you!</p>
             <div class="form-input" >
                 <label for="description">Describe your project in a couple of sentences:</label>
                 <textarea id="description" name="description"></textarea>
-            </div>
-            <div class="form-input" >
-                <label for="name">Your name:</label>
-                <input id="name" type="text" name="name" autocomplete="name" />
-            </div>
-            <div class="form-input" >
-                <label for="email">Your email:</label>
-                <input id="email" type="email" name="email" autocomplete="email" required />
             </div>
             <input type="text" name="_gotcha" style="display:none" />
             <input type="hidden" name="_next" value="http://punkrockdev.com/thanks.html" />
@@ -187,7 +187,9 @@ Looking forward to hearing from you!</p>
 </div>
 
 <div class="raw show-laptop">
+    <div class="col-3-5 col-offset-1-5">
 {% include newsletter.html %}
+    </div>
 </div>
 </div>
 </div>

@@ -9,8 +9,10 @@
 $base-font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 $base-font-size:   24px;
 $base-font-size-mobile:   20px;
+
 $small-font-size:  $base-font-size * 0.875;
-$small-font-size-mobile:  $base-font-size-mobile * 0.875;
+$small-font-size-laptop:  $base-font-size-mobile * 0.895;
+$small-font-size-mobile:  $base-font-size-mobile * 0.605;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
