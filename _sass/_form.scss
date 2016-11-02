@@ -1,7 +1,10 @@
 form {
     /* margin: 0 auto; */
     /* width: 400px; */
-    padding: 1em;
+    padding: 2em;
+    @include media-query($on-palm) {
+        padding: 1em;
+    }
     background: $grey-color-transparent;
 
     .form-input { margin-bottom: 1em;}
@@ -42,7 +45,6 @@ form {
     }
     .slider-value {
         font: 1em $base-font-family;
-        margin: 0.5em;
         @include media-query($on-laptop) {
             margin: 0em;
             width: 100%;
@@ -53,6 +55,10 @@ form {
 #mc_embed_signup{
     clear:left;
     font-size: 0.7em;
+
+    #mc_embed_signup_scroll {
+        h2 { margin: 0 0; }
+    }
 
     p { text-align: left; }
 
