@@ -144,6 +144,7 @@
 }
 .contact-list,
 .social-media-list {
+    margin-top: 1em;
     list-style: none;
     margin-left: 0;
 }
@@ -155,6 +156,9 @@
     @include media-query($on-palm) {
         margin-left: 0;
         width: 60%;
+    }
+    img {
+        padding: 1em 0;
     }
 }
 
