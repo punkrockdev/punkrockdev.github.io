@@ -14,6 +14,14 @@ dl, dd, ol, ul, figure {
   box-sizing: border-box;
 }
 
+
+
+@mixin selected-text {
+    background: $accent-color-light; /* color: $background-color; */
+}
+*::-moz-selection { @include selected-text }
+*::selection { @include selected-text }
+
 /**
  * Basic styling
  */

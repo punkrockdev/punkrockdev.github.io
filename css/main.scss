@@ -32,6 +32,7 @@ $content-width:    1320px;
 $grid-pad:         20px;
 
 $accent-color: #D64242; // red
+$accent-color-light: lighten($accent-color, 5%);
 $brand-color:      $accent-color;
 $grey-color-transparent: rgba(177,172,172,0.34);
 
