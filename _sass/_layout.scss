@@ -188,6 +188,10 @@ p {
     }
 }
 
+p.flush-left {
+    text-align: left;
+}
+
 .page-content {
     padding: $spacing-unit 0;
     @include media-query($on-palm) {
