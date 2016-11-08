@@ -188,8 +188,12 @@ p {
     }
 }
 
-p.flush-left {
+.flush-left {
     text-align: left;
+}
+
+.flush-right {
+    text-align: right;
 }
 
 .page-content {
