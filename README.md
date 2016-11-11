@@ -7,3 +7,5 @@ Install ruby and:
 Then develop using:
 
     jekyll serve
+
+Live on: <http://punkrockdev.com/>
