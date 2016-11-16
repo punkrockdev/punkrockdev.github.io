@@ -4,7 +4,9 @@ email: info@punkrockdev.com
 description: > # this means to ignore newlines until "baseurl:"
   Developing apps with a kick!
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://punkrockdev.com" # the base hostname & protocol for your site
+host: punkrockdev.com
+url: "https://punkrockdev.com" # the base hostname & protocol for your site
+enforce_ssl: punkrockdev.com
 twitter_username: punkrockdev
 github_username:  punkrockdev
 
