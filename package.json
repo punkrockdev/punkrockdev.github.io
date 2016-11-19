@@ -1,0 +1,24 @@
+{
+  "name": "punkrockdev.github.io",
+  "version": "1.0.0",
+  "description": "Install ruby and:",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-image": "^2.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/punkrockdev/punkrockdev.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/punkrockdev/punkrockdev.github.io/issues"
+  },
+  "homepage": "https://github.com/punkrockdev/punkrockdev.github.io#readme"
+}
