@@ -14,10 +14,10 @@ Deploy by commiting, but first optimize images:
 
     gulp
 
-Live on: <http://punkrockdev.com/>
+Live on: <https://punkrockdev.com/>
 
 ## Credits
 
-Jekyll site generator – <http://jekyllrb.com/>
-Font Awesome icons – <https://github.com/encharm/Font-Awesome-SVG-PNG/>
-Grid inspiration – <https://css-tricks.com/dont-overthink-it-grids/>
+- Jekyll site generator – <http://jekyllrb.com/>
+- Font Awesome icons – <https://github.com/encharm/Font-Awesome-SVG-PNG/>
+- Grid inspiration – <https://css-tricks.com/dont-overthink-it-grids/>
