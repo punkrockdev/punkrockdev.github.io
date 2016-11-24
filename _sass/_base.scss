@@ -218,6 +218,11 @@ pre {
         height: $base-font-size;
         vertical-align: middle;
 
+        @include media-query($on-laptop) {
+            width: $base-font-size-mobile;
+            height: $base-font-size-mobile;
+        }
+
         path {
             fill: $black-color;
         }
