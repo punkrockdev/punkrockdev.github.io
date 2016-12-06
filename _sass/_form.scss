@@ -2,39 +2,57 @@ form {
     /* margin: 0 auto; */
     /* width: 400px; */
     padding: 2em;
-    @include media-query($on-palm) {
+    @include media-query($on-desktop) {
         padding: 1em;
     }
     background: $grey-color-transparent;
 
     .form-input { margin-bottom: 1em;}
-    label { margin-right: 1em; }
-    input, textarea {
+    label {
+        margin-right: 0.5em;
+        @include media-query($on-desktop) {
+            display: block;
+        }
+    }
+    input[type="text"], input[type="email"] { /* name, email text inputs */
+        @include media-query-min($on-desktop) {
+            width: 78%;
+        }
+    }
+    input, textarea { /* all (text) inputs */
         font: 1em $base-font-family;
         border: none;
         padding: 0.3em;
-        @include media-query($on-palm) {
-            padding: 2px;
+        margin: 0.3em 0;
+        @include media-query($on-desktop) {
+            width: 100%;
         }
         &:focus {
             outline: $accent-color auto 5px;
         }
     }
-    textarea {
-        margin: 1em 0; width: 100%; height: 6em;
+    textarea { /* only the description text input */
+        width: 100%; height: 10em;
         max-width: 100%;
+        @include media-query($on-desktop) {
+            height: 8em;
+        }
+    }
+    .slider-value {
+        font: 1em $base-font-family;
+        line-height: 1.5;
+        font-style: italic;
+        @include media-query($on-desktop) {
+            float: left;
+        }
     }
     input[type="range"] {
         display: block;
         padding: 1em;
-        width: 80%;
+        width: 100%;
         margin-left: 0;
-        @include media-query($on-palm) {
-            width: 100%;
-        }
     }
     input[type="submit"] {
-        margin-top: 1em;
         color: $accent-color;
         border: 6px solid $accent-color;
         background: none;
@@ -45,12 +63,11 @@ form {
         &:hover {
             background: rgba($accent-color, .3 )
         }
-    }
-    .slider-value {
-        font: 1em $base-font-family;
-        @include media-query($on-laptop) {
-            margin: 0em;
-            width: 100%;
+        @include media-query-min($on-laptop) {
+            width: 60%;
+        }
+        @include media-query-min($on-desktop) {
+            width: 45%;
         }
     }
 }
