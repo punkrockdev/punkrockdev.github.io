@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Thanks!
 ---
 
 *We've received your inquiry and will reply as soon as we can.*
