@@ -24,25 +24,25 @@
 
 .col-1-5 {
     width: 20%;
-    @include media-query($on-palm) {
+    @include media-query($on-desktop) {
         width: 100%;
     }
 }
 .col-offset-1-5 {
     margin-left: 20%;
-    @include media-query($on-palm) {
+    @include media-query($on-desktop) {
         margin-left: 0%;
     }
 }
 .col-2-5 {
     width: 40%;
-    @include media-query($on-palm) {
+    @include media-query($on-desktop) {
         width: 50%;
     }
 }
 .col-3-5 {
     width: 60%;
-    @include media-query($on-palm) {
+    @include media-query($on-desktop) {
         width: 100%;
         padding: 1em 0;
     }
@@ -64,11 +64,16 @@
 }
 .col-3-4-5 {
     width: 53.33%;
-    @include media-query($on-palm) {
+    @include media-query($on-desktop) {
         width: 100%;
     }
 }
 
+.hide-desktop {
+    @include media-query($on-desktop) {
+        display: none;
+    }
+}
 .hide-laptop {
     @include media-query($on-laptop) {
         display: none;
@@ -80,13 +85,18 @@
     }
 }
 
-.show-palm {
-    @include media-query-min($on-palm) {
+.show-desktop {
+    @include media-query-min($on-desktop) {
         display: none;
     }
 }
 .show-laptop {
     @include media-query-min($on-laptop) {
+        display: none;
+    }
+}
+.show-palm {
+    @include media-query-min($on-palm) {
         display: none;
     }
 }

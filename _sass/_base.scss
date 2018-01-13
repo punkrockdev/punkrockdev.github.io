@@ -108,10 +108,6 @@ a {
     color: $brand-color;
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
     &:hover {
         color: $text-color;
         text-decoration: underline;
@@ -135,7 +131,18 @@ blockquote {
         margin-bottom: 0;
     }
 
+    @include media-query($on-desktop) {
+        padding-top: 1em;
+        font-size: $base-font-size;
+    }
+    @include media-query($on-laptop) {
+        font-size: $base-font-size-mobile;
+    }
     @include media-query($on-palm) {
+        padding-top: 0;
+    }
+    
+    &.no-leading {
         padding-top: 0;
     }
 }

@@ -54,13 +54,18 @@
     clear: left;
     float: left;
     text-align: center;
-    width: 100%;
-    font-size: 64px;
+    width: 98%;
+    padding-left: 1%;
+    font-size: 78px;
+    
+    @include media-query($on-laptop) {
+        font-size: 64px;
+    }
     @include media-query($on-laptop) {
         font-size: 36px;
     }
     @include media-query($on-palm) {
-        font-size: 24px;
+        font-size: 32px;
         transform: rotate(1deg);
     }
     font-weight: 900;
@@ -165,11 +170,12 @@
 
 .footer-col-wrapper {
     width: 66%;
-    margin-left: 20%;
+    // margin-left: 20%;
+    margin-left: 15%;
     @extend %clearfix;
-    @include media-query($on-palm) {
+    @include media-query($on-desktop) {
         margin-left: 0;
-        width: 60%;
+        width: 69%;
     }
     img {
         padding: 1em 0;
@@ -180,14 +186,14 @@
     float: left;
     width: 39%;
     padding-left: 0.7em;
-    @include media-query($on-palm) {
+    @include media-query($on-desktop) {
         width: 100%;
     }
 }
 
 .footer-col-1 {
     width: 60%;
-    @include media-query($on-palm) {
+    @include media-query($on-desktop) {
         width: 100%;
     }
 }
@@ -197,7 +203,7 @@
  */
 p {
     text-align: justify;
-    @include media-query($on-laptop) {
+    @include media-query($on-desktop) {
         text-align: left;
     }
 }
@@ -276,11 +282,16 @@ p {
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 32px;
 
         @include media-query($on-laptop) {
-            font-size: 22px;
+            font-size: 26px;
         }
+        // font-size: 26px;
+        // 
+        // @include media-query($on-laptop) {
+        //     font-size: 22px;
+        // }
     }
 
     h4 {
@@ -295,12 +306,15 @@ p {
 .doodle {
     padding-top: 2em;
     text-align: center;
-    @include media-query($on-palm) {
+    img { max-height: 100%}
+    @include media-query($on-desktop) {
         padding-top: 0;
         position: absolute;
         right: 0.5em;
-        width: 15%;
+        height: 100px;
     }
+    @include media-query($on-laptop) { height: 63px; }
+    @include media-query($on-palm) { height: 75px; }
 }
 
 /**
@@ -318,7 +332,7 @@ p {
 
 .mugshot {
     padding: 2em;
-    @include media-query($on-palm) {
+    @include media-query($on-desktop) {
         padding: 0;
         padding-top: 0;
         padding-left: 0;
