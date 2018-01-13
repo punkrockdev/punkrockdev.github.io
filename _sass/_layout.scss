@@ -5,12 +5,26 @@
     // Positioning context for the mobile navigation icon
     position: relative;
 
+    .site-image-wrapper {
+        position: relative;
+        padding-bottom: 41.74%; // (601) / 1440
+        background-color: $grey-color-transparent;
+    }
+    .site-image-white-triangle {
+        background-color: $background-color;
+        position: absolute;
+        width: 100%;
+        padding-bottom: 3.78%; // 72 / 1905
+        bottom: 0;
+    }
     .site-image {
         width: 100%;
+        position: absolute;
+        z-index: 1;
     }
 
     .site-title-wrapper {
-        z-index: 1;
+        z-index: 2;
         position: absolute;
         top: 40%;
         width: 100%;
