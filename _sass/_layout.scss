@@ -157,6 +157,8 @@
     @include media-query($on-palm) {
         font-size: $small-font-size-mobile;
     }
+    
+    a { color: $black-color; }
 
 }
 .footer-background img {
@@ -167,17 +169,21 @@
     margin-top: 1em;
     list-style: none;
     margin-left: 0;
+    
+    li { padding: 0.3em 0; }
 }
 
 .footer-col-wrapper {
-    width: 66%;
-    margin-left: 12%;
+    width: 67%;
+    margin-left: 23.5%;
+    #made-with { display: block; }
     @extend %clearfix;
     @include media-query($on-desktop) {
         margin-left: 0;
     }
     img {
         padding: 1em 0;
+        width: 80%;
     }
 }
 
