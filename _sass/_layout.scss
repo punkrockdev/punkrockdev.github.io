@@ -170,7 +170,10 @@
     list-style: none;
     margin-left: 0;
     
-    li { padding: 0.3em 0; }
+    li {
+        padding: 0.3em 0;
+        svg { margin-right: 0.5em; }
+    }
 }
 
 .footer-col-wrapper {
