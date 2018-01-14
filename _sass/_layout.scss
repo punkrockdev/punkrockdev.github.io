@@ -56,7 +56,7 @@
     text-align: center;
     width: 98%;
     padding-left: 1%;
-    font-size: 78px;
+    font-size: 68px;
     
     @include media-query($on-laptop) {
         font-size: 64px;
@@ -65,7 +65,7 @@
         font-size: 36px;
     }
     @include media-query($on-palm) {
-        font-size: 32px;
+        font-size: 28px;
         transform: rotate(1deg);
     }
     font-weight: 900;
@@ -150,6 +150,7 @@
     position: absolute;
     padding-top: 10%;
     font-size: $small-font-size;
+    @include media-query($on-desktop) { font-weight: 900; }
     @include media-query($on-laptop) {
         font-size: $small-font-size-laptop;
     }
@@ -170,12 +171,10 @@
 
 .footer-col-wrapper {
     width: 66%;
-    // margin-left: 20%;
-    margin-left: 15%;
+    margin-left: 12%;
     @extend %clearfix;
     @include media-query($on-desktop) {
         margin-left: 0;
-        width: 69%;
     }
     img {
         padding: 1em 0;
@@ -306,15 +305,15 @@ p {
 .doodle {
     padding-top: 2em;
     text-align: center;
-    img { max-height: 100%}
+    img { max-width: 100%}
     @include media-query($on-desktop) {
         padding-top: 0;
         position: absolute;
         right: 0.5em;
-        height: 100px;
+        width: 100px;
     }
-    @include media-query($on-laptop) { height: 63px; }
-    @include media-query($on-palm) { height: 75px; }
+    @include media-query($on-laptop) { width: 63px; }
+    @include media-query($on-palm) { width: 75px; }
 }
 
 /**
@@ -324,6 +323,8 @@ p {
 .app-screenshot {
     img {
         border: 24px solid $grey-color-transparent;
+        display: block;
+        margin: 0 auto;
     }
     p {
         text-align: left;
@@ -349,7 +350,7 @@ p {
 
 #phone-doodle.doodle {
     padding-top: 4em;
-    @include media-query($on-palm) {
+    @include media-query($on-desktop) {
         padding-top: 0;
         position: relative;
         width: 33%;
