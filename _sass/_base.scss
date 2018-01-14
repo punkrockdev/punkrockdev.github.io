@@ -190,17 +190,17 @@ pre {
     @extend %clearfix;
     
     @include media-query($on-desktop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 6));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit} * 6));
+        padding-right: $spacing-unit * 3;
+        padding-left: $spacing-unit * 3;
+    }
+
+    @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
         max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
         padding-right: $spacing-unit;
         padding-left: $spacing-unit;
-    }
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
     }
     
     @include media-query($on-palm) {

@@ -2,6 +2,7 @@ form {
     /* margin: 0 auto; */
     /* width: 400px; */
     padding: 2em;
+    margin: 1em 0;
     @include media-query($on-desktop) {
         padding: 1em;
     }
