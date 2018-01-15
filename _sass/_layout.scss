@@ -178,7 +178,7 @@
 
 .footer-col-wrapper {
     width: 67%;
-    margin-left: 23.5%;
+    margin-left: 18%;
     #made-with { display: block; }
     @extend %clearfix;
     @include media-query($on-desktop) {
@@ -201,6 +201,7 @@
 
 .footer-col-1 {
     width: 60%;
+    padding-left: 0;
     @include media-query($on-desktop) {
         width: 100%;
     }
