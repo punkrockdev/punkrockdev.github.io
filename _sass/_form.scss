@@ -1,3 +1,5 @@
+@import "slider";
+
 form {
     /* margin: 0 auto; */
     /* width: 400px; */
@@ -50,9 +52,11 @@ form {
     }
     input[type="range"] {
         display: block;
-        padding: 1em;
+        padding: 1em 0;
         width: 100%;
         margin-left: 0;
+        -webkit-appearance: none;
+        background-color: transparent;
     }
     input[type="submit"] {
         color: $accent-color;
@@ -86,12 +90,13 @@ form {
     p { text-align: left; }
 
     form {
+        margin-top: 0;
         padding: 10px 10px 10px 3%;
         background: none;
         
         h2 { font-size: 1.3em; text-transform: uppercase; }
         
-        .indicates-required { font-size: 14px; }
+        .indicates-required { display: none; }
         
         input { border-radius: 0; }
 
@@ -103,16 +108,23 @@ form {
             font-weight: 900;
             font-size: inherit;
             margin-left: 0;
-            padding: 0 0.3em;
+            height: auto;
+            padding: 0.3em;
             line-height: 1em;
             border-radius: 0;
+            width: 96%;
             &:hover {
                 background: rgba($black-color, .3 )
             }
         }
-        .mc-field-group input {
-            @include media-query($on-laptop) {
-                padding: 4px;
+        .mc-field-group {
+            input {
+                @include media-query($on-laptop) {
+                    padding: 4px;
+                }
+            }
+            input, textarea { /* all (text) inputs */
+                padding: 0.3em;
             }
         }
 
@@ -124,7 +136,7 @@ form {
         form {
             padding: 0;
             .mc-field-group {
-                width: 30%;
+                width: 29%;
                 margin-right: 1em;
                 display: inline-block;
                 @include media-query($on-laptop) {
@@ -137,6 +149,11 @@ form {
                 padding: 8px 10px;
                 margin-left: 0;
                 height: auto;
+                width: 29%;
+                display: inline-block;
+                @include media-query($on-laptop) {
+                    width: 100%;
+                }
             }
         }
         

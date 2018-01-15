@@ -9,7 +9,7 @@
     clear: left;
     padding: 2em 0;
     @include media-query($on-palm) {
-        padding: 0;
+        padding: 1em 0;
     }
 }
 

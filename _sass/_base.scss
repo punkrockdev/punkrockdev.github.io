@@ -49,6 +49,9 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
+    @include media-query($on-palm) {
+        margin-bottom: 0.5em;
+    }
 }
 
 
