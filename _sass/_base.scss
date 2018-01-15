@@ -17,7 +17,8 @@ dl, dd, ol, ul, figure {
 
 
 @mixin selected-text {
-    background: $accent-color-light; /* color: $background-color; */
+    background: $accent-color-light;
+    color: $black-color;
 }
 *::-moz-selection { @include selected-text }
 *::selection { @include selected-text }
