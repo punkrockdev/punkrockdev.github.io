@@ -339,6 +339,12 @@ p {
     p {
         text-align: left;
     }
+    
+    @include media-query($on-desktop) {
+        display: flex;
+        flex-flow: column-reverse;
+        .col-2-5 { width: 100%; }
+    }
 }
 
 .mugshot {
