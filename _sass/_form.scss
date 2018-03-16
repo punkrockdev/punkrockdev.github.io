@@ -125,6 +125,7 @@ form {
             }
         }
         .mc-field-group {
+            width: 100%;
             input {
                 @include media-query($on-laptop) {
                     padding: 4px;
@@ -159,6 +160,7 @@ form {
                 min-width: 29%;
                 width: auto;
                 display: block;
+                border: 4px solid $black-color;
                 background: none;
                 @include media-query($on-palm) {
                     width: 100%;
