@@ -1,6 +1,10 @@
 ---
 layout: page
 title: The DIY Accounting Starter Kit: Austria
+feature-img: "/images/accounting/graphs.png"
+excerpt: >
+    With this DIY Accounting Starter Kit 🗄📒 you can automatically visualise
+    your company's cash flow 📈 and estimate your future taxes and social insurance.
 ---
 
 Having trouble keeping track of your company's cash flow numbers? 🙃 Drowning in 
@@ -43,7 +47,7 @@ didn't really help me much. Well, now that I've learned how these things work,
 I decided to share a starter kit to help people who are in the same situation.
 
 In return, I hope you can help me extend the template to more company types and
-maybe even more countries – crowdsourcing for the EU startup ecosystem win 🙂
+maybe even more countries – crowdsourcing for the EU startup ecosystem win. 🙂
 Instructions for submitting improvements are inside the spreadsheet.
 
 <div class="row" style="padding: 0">

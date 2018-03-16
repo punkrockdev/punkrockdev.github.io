@@ -2,13 +2,17 @@
 title: Punk Rock Dev
 email: info@punkrockdev.com
 description: > # this means to ignore newlines until "baseurl:"
-  Developing apps with a kick!
+  Developing apps with a kick! Punk Rock Dev is an indie web development and
+  data analysis studio that can help you build that app you've always dreamed of…
 baseurl: "" # the subpath of your site, e.g. /blog/
 hostdomain: punkrockdev.com
 url: "https://punkrockdev.com" # the base hostname & protocol for your site
+locale: en_US
 enforce_ssl: punkrockdev.com
 twitter_username: punkrockdev
 github_username:  punkrockdev
+facebook_id: 217439528836908
+avatar: "/images/social.png"
 
 # Build settings
 markdown: kramdown
