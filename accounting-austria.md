@@ -87,7 +87,7 @@ DIY Accounting Starter Kit and start tracking your business numbers today!
 </div>
 <div class="mc-field-group input-group" style="display:none">
     <strong>Interests </strong>
-    <ul><li><input type="checkbox" value="1" name="group[5691][1]" id="mce-group[5691]-5691-0"><label for="mce-group[5691]-5691-0" checked>Accounting-Austria</label></li>
+    <ul><li><input type="checkbox" value="1" name="group[5691][1]" id="mce-group[5691]-5691-0" checked><label for="mce-group[5691]-5691-0">Accounting-Austria</label></li>
 </ul>
 </div>
 	<div id="mce-responses" class="clear">
