@@ -99,7 +99,6 @@ DIY Accounting Starter Kit and start tracking your business numbers today!
     </div>
 </form>
 </div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[3]='NAME';ftypes[3]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
 </div>
 
