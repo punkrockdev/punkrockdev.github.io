@@ -1,5 +1,26 @@
 @import "slider";
 
+@mixin accent-button() {
+    color: $accent-color;
+    border: 6px solid $accent-color;
+    background: none;
+    font-weight: 900;
+    font-size: 36px;
+    padding: 0px 5px;
+    margin: 0 auto;
+    display: block;
+    cursor:pointer;
+    &:hover {
+        background: rgba($accent-color, .3 )
+    }
+    @include media-query-min($on-laptop) {
+        width: 60%;
+    }
+    @include media-query-min($on-desktop) {
+        width: 45%;
+    }
+}
+
 form {
     /* margin: 0 auto; */
     /* width: 400px; */
@@ -19,7 +40,7 @@ form {
     }
     input[type="text"], input[type="email"] { /* name, email text inputs */
         @include media-query-min($on-desktop) {
-            width: 78%;
+            width: 100%;
         }
     }
     input, textarea { /* all (text) inputs */
@@ -59,24 +80,7 @@ form {
         background-color: transparent;
     }
     input[type="submit"] {
-        color: $accent-color;
-        border: 6px solid $accent-color;
-        background: none;
-        font-weight: 900;
-        font-size: 36px;
-        padding: 0px 5px;
-        margin: 0 auto;
-        display: block;
-        cursor:pointer;
-        &:hover {
-            background: rgba($accent-color, .3 )
-        }
-        @include media-query-min($on-laptop) {
-            width: 60%;
-        }
-        @include media-query-min($on-desktop) {
-            width: 45%;
-        }
+        @include accent-button;
     }
 }
 
@@ -115,7 +119,7 @@ form {
             border-radius: 0;
             -webkit-border-radius: 0;
             -webkit-appearance: none !important;
-            width: 96%;
+            width: 100%;
             &:hover {
                 background: rgba($black-color, .3 )
             }
@@ -142,16 +146,34 @@ form {
                 width: 100%;
             }
             
+            input {
+                background-color: $grey-color-light;
+            }
+            
             input[type="submit"] {
                 font-weight: 900;
                 padding: 8px 10px;
                 margin: 1em auto;
                 height: auto;
-                width: 29%;
+                min-width: 29%;
+                width: auto;
                 display: block;
-                @include media-query($on-laptop) {
+                background: none;
+                @include media-query($on-palm) {
                     width: 100%;
                 }
+                
+                &.accent-button {
+                    @include accent-button;
+                    margin-top: 1em;
+                }
+            }
+            
+            div.mce_inline_error {
+                background: none;
+                font-weight: 400;
+                color: $accent-color;
+                padding: 2px 0;
             }
         }
         
