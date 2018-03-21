@@ -137,6 +137,33 @@ form {
         }
 
     }
+    
+    div#mce-responses {
+        margin: 5px 0 25px;
+        padding: 0;
+    }
+    
+    div.response {
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+    
+    #mce-success-response {
+        visibility: hidden;
+        &::before {
+            content: "Awesome, thanks! 🙌";
+            visibility: visible;
+            color: $black-color;
+        }
+    }
+    
+    #mc-embedded-subscribe-form div.mce_inline_error {
+        background: none;
+        color: $accent-color;
+        padding: 0;
+        font-size: 16px;
+    }
 }
 
 .body-newsletter {
@@ -170,13 +197,6 @@ form {
                     @include accent-button;
                     margin-top: 1em;
                 }
-            }
-            
-            div.mce_inline_error {
-                background: none;
-                font-weight: 400;
-                color: $accent-color;
-                padding: 2px 0;
             }
         }
         
