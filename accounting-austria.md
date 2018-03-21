@@ -52,7 +52,7 @@ Instructions for submitting improvements are inside the spreadsheet.
 
 <div class="row" style="padding: 0">
     <div class="col-2-3">
-        <h2>Author: <a href="https://punkrockdev.com/">Dražen Lučanin</a></h2>
+        <h2>Author: <a href="https://metakermit.com/">Dražen Lučanin</a></h2>
 
         <p style="text-align: left">Software developer, data analyst, founder of
         <a href="https://punkrockdev.com/">Punk Rock Dev</a> and definitely
