@@ -36,6 +36,7 @@ diagrams are generated for you automatically.
 - 💼 for now the numbers are for sole proprietorships only (Gewerbeschein / Einzelunternehmen)
 - 🤞 take everything inside with a grain of salt, as I'm not an accountant
 (I consult a [tax advisor](http://www.diewt.at) for the real tax application)
+- 📖 if you want to learn more about the Austrian tax system yourself, here is [a good online resource](https://www.pkf.at/media/public/db/media/1/2011/08/43/doingbusinessinaustria2016.pdf) in English.
 
 ## The price?
 
