@@ -6,7 +6,8 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-image": "^2.7.2"
+    "gulp-image": "^4.3.0",
+    "gulp-webp": "^3.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
