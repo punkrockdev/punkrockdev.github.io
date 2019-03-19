@@ -390,68 +390,154 @@ p {
 // }
 
 #the-band {
-    padding-top: 4em;
     @include media-query($on-palm) {
         padding-top: 2em;
     }
 }
 
-#phone-doodle.doodle {
-    padding-top: 4em;
-    @include media-query($on-desktop) {
-        padding-top: 0;
-        position: relative;
-        width: 33%;
-    }
+// #phone-doodle.doodle {
+//     padding-top: 4em;
+//     @include media-query($on-desktop) {
+//         padding-top: 0;
+//         position: relative;
+//         width: 33%;
+//     }
+// }
+
+section {
+  padding: 80px 0;
+  clear: both;
 }
 
-.about-col {
-  margin-bottom: 70px;
-  padding-left: 30px;
-
-  .about-description {
-    font-size: 16px;
+.portfolio-section {
+  .row {
+    padding: 0;
   }
 
-  &-left {
-    clear: left;
+  [class*='col-'] {
+    padding-left: 30px;
+  }
+
+  h2 {
+    margin: 0 0 30px;
   }
 
   h3 {
-    color: #292929;
-    font-size: 30px;
-    margin-top: 20px;
+    margin-top: 35px;
+    text: {
+      align: left;
+      transform: uppercase;
+    }
 
-    a {
-      color: #292929;
-      text-decoration: none;
-      font-size: 70%;
-
-      &.about-name {
-        font-size: 30px;
-      }
+    font: {
+      weight: 400;
+      size: 24px;
     }
   }
 
-  .picture-wrapper {
-    position: relative;
-    cursor: pointer;
+   p {
+     text-align: left;
+     font: {
+       size: 16px;
+       font-weight: 300;
+     }
+   }
 
-    .mugshot-hidden {
-      position: absolute;
-      top: 0;
-      opacity: 0;
+   .app-screenshot {
+     height: 220px;
+     background-size: cover;
+     background-repeat: no-repeat;
+
+     &.imGraetzl {
+       background-image: url("../images/discography/imgraetzl.webp");
+     }
+
+     &.pos {
+       background-image: url("../images/discography/POSMusic.webp");
+       background-position: left center;
+     }
+
+     &.crosho {
+       background-image: url("../images/discography/crosho.webp");
+     }
+   }
+
+   .col {
+     clear: both;
+   }
+
+   .button {
+     margin-top: 50px;
+     display: inline-block;
+     background-color: #292929;
+     color: #fff;
+     width: 150px;
+     height: 40px;
+     line-height: 30px;
+     border: none;
+     cursor: pointer;
+     font: {
+       size: 16px;
+       weight: 300;
+     }
+   }
+}
+
+.about-section {
+
+  .row {
+    padding: 0;
+  }
+
+  .about-col {
+    margin-bottom: 70px;
+    padding-left: 30px;
+
+    .about-description {
+      font-size: 16px;
     }
 
-    &:hover {
+    &-left {
+      clear: left;
+    }
+
+    h3 {
+      color: #292929;
+      font-size: 30px;
+      margin-top: 20px;
+
+      a {
+        color: #292929;
+        text-decoration: none;
+        font-size: 70%;
+
+        &.about-name {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .picture-wrapper {
+      position: relative;
+      cursor: pointer;
+
       .mugshot-hidden {
-        opacity: 1;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+      }
+
+      &:hover {
+        .mugshot-hidden {
+          opacity: 1;
+        }
       }
     }
   }
 }
 
 .contact-section {
+  background-color: #fafafa;
   p, label, input, textarea {
     font: {
       size: 20px;
