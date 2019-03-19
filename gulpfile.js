@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var shell = require('gulp-shell');
 var browserSync = require('browser-sync').create();
-const gulp = require('gulp');
 // const image = require('gulp-image');
 const webp = require('gulp-webp');
 gulp.task('build', shell.task(['bundle exec jekyll serve']));
