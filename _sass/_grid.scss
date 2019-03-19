@@ -1,5 +1,5 @@
 /**
- * Dražen's "don't overthink it" grid
+ * Dražen's "don't overthink it" grid <3
  */
 .grid {
     width: auto;
@@ -32,6 +32,11 @@
         width: 100%;
     }
 }
+
+.col-offset-1-4 {
+  margin-left: 25%;
+}
+
 .col-offset-1-5 {
     margin-left: 20%;
     @include media-query($on-desktop) {
