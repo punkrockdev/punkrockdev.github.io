@@ -432,19 +432,36 @@ p {
       }
     }
   }
+
+  .picture-wrapper {
+    position: relative;
+    cursor: pointer;
+
+    .mugshot-hidden {
+      position: absolute;
+      top: 0;
+      opacity: 0;
+    }
+
+    &:hover {
+      .mugshot-hidden {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .contact-section {
-  p, label {
+  p, label, input, textarea {
     font: {
       size: 20px;
     }
+    padding-left: 0;
   }
   form {
     input {
       padding: 7px 0;
       margin: 0;
-      font-size: 20px;
     }
   }
 }
