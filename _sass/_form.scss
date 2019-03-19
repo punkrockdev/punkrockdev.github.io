@@ -21,6 +21,11 @@
     }
 }
 
+.contact-section {
+  background-color: #f5f5f5;
+  overflow: auto;
+}
+
 form {
     /* margin: 0 auto; */
     /* width: 400px; */
@@ -29,9 +34,9 @@ form {
     @include media-query($on-desktop) {
         padding: 1em;
     }
-    background: $grey-color-transparent;
+    // background: $grey-color-transparent;
 
-    .form-input { margin-bottom: 1em;}
+    .form-input { margin-bottom: 1.5em;}
     label {
         margin-right: 0.5em;
         @include media-query($on-desktop) {
@@ -46,39 +51,43 @@ form {
     input, textarea { /* all (text) inputs */
         font: 1em $base-font-family;
         border: none;
+        border-bottom: 2px solid #292929;
         border-radius: 0;
         padding: 0.3em;
         margin: 0.3em 0;
+        background: transparent;
         @include media-query($on-desktop) {
             width: 100%;
         }
         &:focus {
-            outline: $accent-color auto 5px;
+          outline: none;
+          border-bottom: 1px solid #292929;
         }
     }
     textarea { /* only the description text input */
         width: 100%; height: 10em;
         max-width: 100%;
+        resize: none;
         @include media-query($on-desktop) {
             height: 8em;
         }
     }
-    .slider-value {
-        font: 1em $base-font-family;
-        line-height: 1.5;
-        font-style: italic;
-        @include media-query($on-desktop) {
-            float: left;
-        }
-    }
-    input[type="range"] {
-        display: block;
-        padding: 1em 0;
-        width: 100%;
-        margin-left: 0;
-        -webkit-appearance: none;
-        background-color: transparent;
-    }
+    // .slider-value {
+    //     font: 1em $base-font-family;
+    //     line-height: 1.5;
+    //     font-style: italic;
+    //     @include media-query($on-desktop) {
+    //         float: left;
+    //     }
+    // }
+    // input[type="range"] {
+    //     display: block;
+    //     padding: 1em 0;
+    //     width: 100%;
+    //     margin-left: 0;
+    //     -webkit-appearance: none;
+    //     background-color: transparent;
+    // }
     input[type="submit"] {
         @include accent-button;
     }
