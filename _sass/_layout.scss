@@ -404,18 +404,17 @@ p {
 //     }
 // }
 
-section {
-  padding: 80px 0;
-  clear: both;
-}
-
 .portfolio-section {
+  clear: both;
+  padding-bottom: 100px;
+  padding-top: 150px;
+
   .row {
     padding: 0;
   }
 
   [class*='col-'] {
-    padding-left: 30px;
+    padding: 0px;
   }
 
   h2 {
@@ -423,7 +422,9 @@ section {
   }
 
   h3 {
-    margin-top: 35px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff;
     text: {
       align: left;
       transform: uppercase;
@@ -431,22 +432,58 @@ section {
 
     font: {
       weight: 400;
-      size: 24px;
+      size: 20px;
     }
   }
 
    p {
      text-align: left;
+     color: #fff;
+     max-width: 200px;
      font: {
-       size: 16px;
-       font-weight: 300;
+       size: 14px;
+       weight: 300;
      }
    }
 
+    .portfolio-description {
+      bottom: 10px;
+      right: 10px;
+      z-index: 2;
+      position: absolute;
+      background-color: #292929;
+      padding: 10px 20px;
+    }
+
    .app-screenshot {
-     height: 220px;
+     height: 60vh;
      background-size: cover;
      background-repeat: no-repeat;
+     position: relative;
+     border: 5px solid #292929;
+     transition: .3s ease-in-out;
+     transition-property: border-color;
+     cursor: pointer;
+
+     &:after {
+       content: "";
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       background-color: rgba(1,1,1,.2);
+       z-index: 1;
+       transition: .3s ease-in-out;
+       transition-property: background-color;
+     }
+
+     &:hover {
+       border-color: #000;
+       &:after {
+         background-color: rgba(1,1,1,0);
+       }
+     }
 
      &.imGraetzl {
        background-image: url("../images/discography/imgraetzl.webp");
@@ -454,11 +491,16 @@ section {
 
      &.pos {
        background-image: url("../images/discography/POSMusic.webp");
-       background-position: left center;
+       background-position: left top;
+       background-size: cover;
      }
 
      &.crosho {
        background-image: url("../images/discography/crosho.webp");
+     }
+
+     &.where {
+       background-image: url("../images/discography/where2help.webp");
      }
    }
 
@@ -467,18 +509,18 @@ section {
    }
 
    .button {
-     margin-top: 50px;
+     margin: 50px 0 30px;
      display: inline-block;
+     color: #f5f5f5;
      background-color: #292929;
-     color: #fff;
-     width: 150px;
+     width: 200px;
      height: 40px;
      line-height: 30px;
      border: none;
      cursor: pointer;
      font: {
-       size: 16px;
-       weight: 300;
+       size: 14px;
+       weight: 400;
      }
    }
 }
