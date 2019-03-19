@@ -5,8 +5,10 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-image": "^4.3.0",
+    "gulp-shell": "^0.7.0",
     "gulp-webp": "^3.0.0"
   },
   "scripts": {

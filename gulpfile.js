@@ -1,7 +1,15 @@
+var gulp = require('gulp');
+var shell = require('gulp-shell');
+var browserSync = require('browser-sync').create();
 const gulp = require('gulp');
 // const image = require('gulp-image');
 const webp = require('gulp-webp');
+gulp.task('build', shell.task(['bundle exec jekyll serve']));
 
+gulp.task('serve', function () {
+    browserSync.init({server: {baseDir: '_site/'}});
+    gulp.watch('_site/**/*.*').on('change', browserSync.reload);
+});
 
 // // just resize the images a bit
 // gulp.task('image', function () {
@@ -17,4 +25,4 @@ gulp.task('image-webp', function () {
     .pipe(gulp.dest('./images/'));
 });
 
-gulp.task('default', ['image-webp']);
+gulp.task('default', ['build', 'serve']);

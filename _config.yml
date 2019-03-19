@@ -16,3 +16,4 @@ avatar: "/images/social.png"
 
 # Build settings
 markdown: kramdown
+exclude: [node_modules, gulpfile.js]
