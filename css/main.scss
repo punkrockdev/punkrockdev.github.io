@@ -61,6 +61,7 @@ $grey-color-transparent: rgba(177,172,172,0.34);
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 "base",
+"helpers",
 "layout",
 "syntax-highlighting",
 "grid",

@@ -257,12 +257,12 @@ p {
     text-align: right;
 }
 
-.page-content {
-    padding: $spacing-unit 0;
-    @include media-query($on-palm) {
-        padding: 0;
-    }
-}
+// .page-content {
+//     padding: $spacing-unit 0;
+//     @include media-query($on-palm) {
+//         padding: 0;
+//     }
+// }
 
 .page-heading {
     font-size: 20px;
@@ -307,7 +307,7 @@ p {
 }
 
 .post-content, .page-content {
-    margin-bottom: $spacing-unit;
+    // margin-bottom: $spacing-unit;
 
     h2 {
         font-size: 42px;
@@ -379,15 +379,15 @@ p {
     }
 }
 
-.mugshot {
-    padding: 2em;
-    @include media-query($on-desktop) {
-        padding: 0;
-        padding-top: 0;
-        padding-left: 0;
-        margin-bottom: 13px;
-    }
-}
+// .mugshot {
+//     padding: 2em;
+//     @include media-query($on-desktop) {
+//         padding: 0;
+//         padding-top: 0;
+//         padding-left: 0;
+//         margin-bottom: 13px;
+//     }
+// }
 
 #the-band {
     padding-top: 4em;
@@ -403,4 +403,29 @@ p {
         position: relative;
         width: 33%;
     }
+}
+
+.about-col {
+  margin-bottom: 70px;
+  padding-left: 30px;
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  h3 {
+    color: #292929;
+    font-size: 30px;
+    margin-top: 20px;
+
+    a {
+      color: #292929;
+      text-decoration: none;
+      font-size: 70%;
+
+      &.about-name {
+        font-size: 30px;
+      }
+    }
+  }
 }

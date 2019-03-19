@@ -18,8 +18,12 @@
     padding-right: $grid-pad;
 
 }
-[class*='col-']:last-of-type {
-  padding-right: 0;
+// [class*='col-']:last-of-type {
+//   padding-right: 0;
+// }
+
+.col-1-2 {
+  width: 50%;
 }
 
 .col-1-5 {
