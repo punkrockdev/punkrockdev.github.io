@@ -57,7 +57,7 @@
     width: 98%;
     padding-left: 1%;
     font-size: 68px;
-    
+
     @include media-query($on-laptop) {
         font-size: 64px;
     }
@@ -143,12 +143,38 @@
 .site-footer {
     width: 100%;
     /* margin: auto; */
+    .wrapper {
+      padding: 0;
+    }
+
+    .footer-bottom-links {
+      background-color: #292929;
+      clear: both;
+
+      .contact-list {
+        clear: both;
+        margin: 0;
+        text-align: center;
+        border-top: 1px solid #f5f5f561;
+
+        li {
+          display: inline-block;
+          margin: 0 10px;
+
+          a, i {
+            color: #f5f5f5;
+            font-size: 14px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
 }
 
 .footer-content {
     float: left;
-    position: absolute;
-    padding-top: 10%;
+    padding-top: 70vh;
+    width: 100%;
     font-size: $small-font-size;
     @include media-query($on-desktop) { font-weight: 900; }
     @include media-query($on-laptop) {
@@ -157,19 +183,24 @@
     @include media-query($on-palm) {
         font-size: $small-font-size-mobile;
     }
-    
-    a { color: $black-color; }
+
+    a, i, h2, p, label {
+      color: #f5f5f5;
+      font-weight: 300;
+   }
+
+    background-image: linear-gradient(rgba(1,1,1,.02),rgba(1,1,1,.02)),url("../images/footer_guitar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
-.footer-background img {
-    width: 100%
-}
+
 .contact-list,
 .social-media-list {
     margin-top: 1em;
     list-style: none;
     margin-left: 0;
-    
+
     li {
         padding: 0.3em 0;
         svg { margin-right: 0.5em; }
@@ -177,10 +208,10 @@
 }
 
 .footer-col-wrapper {
-    width: 67%;
-    margin-left: 18%;
+    padding-top: 30px;
+    width: 100%;
+    float: none !important;
     #made-with { display: block; }
-    @extend %clearfix;
     @include media-query($on-desktop) {
         margin-left: 0;
     }
@@ -190,12 +221,13 @@
     }
 }
 
-.footer-col {
-    float: left;
-    width: 39%;
-    padding-left: 0.7em;
+div.footer-col {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    float: none;
     @include media-query($on-desktop) {
-        width: 100%;
+      width: 100%;
     }
 }
 
@@ -297,7 +329,7 @@ p {
             font-size: 26px;
         }
         // font-size: 26px;
-        // 
+        //
         // @include media-query($on-laptop) {
         //     font-size: 22px;
         // }
@@ -339,7 +371,7 @@ p {
     p {
         text-align: left;
     }
-    
+
     @include media-query($on-desktop) {
         display: flex;
         flex-flow: column-reverse;

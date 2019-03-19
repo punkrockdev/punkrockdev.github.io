@@ -1,79 +1,56 @@
 <footer class="site-footer">
 
-    <div class="wrapper">
+    <div class="footer-content"></div>
 
-        <div class="footer-content" >
-            <div class="footer-col-wrapper">
-                <div class="footer-col  footer-col-1">
-                    <a href="/"><img src="/images/logo.svg" id="footer-logo"></a>
-                    <div class="#made-with">
-                        Made with <i class="fas fa-heart"></i> in Zagreb & Vienna
-                    </div>
+    <div class="footer-bottom-links">
+      <div class="footer-col-wrapper">
+          <div class="footer-col  footer-col-3-5">
+              <div class="">
+                  {% include newsletter.html %}
+              </div>
+          </div>
 
-                    <ul class="contact-list">
-                        <li>
-                            <a href="https://blog.punkrockdev.com/">
-                                <i class="fas fa-newspaper fa-fw"></i>
-                                <span><strong>Blog</strong></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.twitter.com/punkrockdev/">
-                                <i class="fab fa-twitter fa-fw"></i>
-                                <span class="hide-laptop" >twitter.com/</span><strong>@punkrockdev</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/punkrockdev/">
-                                <i class="fab fa-facebook-f fa-fw"></i>
-                                <span class="hide-laptop" >facebook.com/</span><strong>punkrockdev</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.github.com/punkrockdev/">
-                                <i class="fab fa-github fa-fw"></i>
-                                <span class="hide-laptop" >github.com/</span><strong>punkrockdev</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/privacy">
-                                <i class="fas fa-file-alt fa-fw"></i>
-                                <span><strong>Privacy</strong></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/impressum">
-                                <i class="fas fa-file-alt fa-fw"></i>
-                                <span><strong>Impressum</strong></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:hello@punkrockdev.com" target="_self" data-title="" title="">
-                                <i class="fas fa-envelope fa-fw"></i>
-                                <span><strong>Email</strong></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col  footer-col-2">
-                    <div class="hide-desktop" >
-                        {% include newsletter.html %}
-                    </div>
-                </div>
-            </div>
-            <div class="footer-col  footer-col-3">
-            </div>
-        </div>
+          <ul class="contact-list">
+                <li>
+                    <a href="https://blog.punkrockdev.com/">
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/punkrockdev/">
+                        <span class="hide-laptop" >twitter.com/</span>@punkrockdev
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/punkrockdev/">
+                        <span class="hide-laptop" >facebook.com/</span>punkrockdev
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/punkrockdev/">
+                        <span class="hide-laptop" >github.com/</span>punkrockdev
+                    </a>
+                </li>
+                <li>
+                    <a href="/privacy">
+                        <span>Privacy</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/impressum">
+                        <span>Impressum</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:hello@punkrockdev.com" target="_self" data-title="" title="">
+                        <span>Email</span>
+                    </a>
+                </li>
+            </ul>
+      </div>
+
+
     </div>
-
-    <div class="footer-background">
-        <picture>
-            <source srcset="images/Footer.webp" type="image/webp">
-            <source srcset="images/Footer.png" type="image/png">
-            <img src="images/Footer.png" alt="Dražen sitting in front of his desk">
-        </picture>
-    </div>
-
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
