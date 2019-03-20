@@ -379,46 +379,33 @@ p {
     }
 }
 
-// .mugshot {
-//     padding: 2em;
-//     @include media-query($on-desktop) {
-//         padding: 0;
-//         padding-top: 0;
-//         padding-left: 0;
-//         margin-bottom: 13px;
-//     }
-// }
-
 #the-band {
     @include media-query($on-palm) {
         padding-top: 2em;
     }
 }
 
-// #phone-doodle.doodle {
-//     padding-top: 4em;
-//     @include media-query($on-desktop) {
-//         padding-top: 0;
-//         position: relative;
-//         width: 33%;
-//     }
-// }
-
-.portfolio-section {
-  clear: both;
-  padding-bottom: 150px;
-  padding-top: 150px;
-
+section {
+  @extend %section-gutter;
   .row {
     padding: 0;
   }
 
-  [class*='col-'] {
-    padding: 0px;
+  p {
+    margin: 0;
   }
 
-  h2 {
-    margin: 0 0 30px;
+  .section-heading {
+    margin-bottom: 7vh;
+  }
+}
+
+.portfolio-section {
+  clear: both;
+  background-color: #fafafa;
+
+  [class*='col-'] {
+    padding: 0px;
   }
 
    .portfolio-item {
@@ -427,18 +414,13 @@ p {
      -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
       -moz-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
       box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+
      &.imGraetzl {
-       background-color: #f5f5f5;
-       > * {
-         color: #292929;
-       }
+      @include portfolio-item(#fff, #292929);
      }
 
      &.pos {
-       background-color: #3e3e3e;
-       > * {
-         color: #fff;
-       }
+       @include portfolio-item(#3e3e3e, #fff);
      }
    }
 
@@ -493,10 +475,6 @@ p {
      }
    }
 
-   .col {
-     clear: both;
-   }
-
    .button {
      margin: 0px 0 30px;
      display: inline-block;
@@ -515,35 +493,55 @@ p {
 }
 
 .about-section {
-
-  .row {
-    padding: 0;
-  }
-
   .about-col {
     margin-bottom: 70px;
     padding-left: 30px;
 
-    .about-description {
-      font-size: 16px;
-    }
-
-    &-left {
+    &-last {
       clear: left;
+      margin: 0;
     }
 
-    h3 {
+    .about-heading {
       color: #292929;
-      font-size: 30px;
       margin-top: 20px;
+
+      font: {
+        size: 30px;
+        weight: 500;
+      }
+
+      text: {
+        transform: uppercase;
+      }
 
       a {
         color: #292929;
         text-decoration: none;
         font-size: 70%;
 
-        &.about-name {
+        &.about-social-link {
           font-size: 30px;
+        }
+      }
+    }
+
+    .about-description {
+      font: {
+        size: 18px;
+        weight: 300;
+      }
+    }
+
+    .social-icon-link {
+
+      .fa-github {
+        margin-left: 10px;
+      }
+
+      [class*='fa-'] {
+        font: {
+          size: 20px;
         }
       }
     }
@@ -551,6 +549,7 @@ p {
     .picture-wrapper {
       position: relative;
       cursor: pointer;
+      margin-bottom: 40px;
 
       .mugshot-hidden {
         position: absolute;

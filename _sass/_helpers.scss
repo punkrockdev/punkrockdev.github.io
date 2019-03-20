@@ -1,3 +1,15 @@
+%section-gutter {
+  padding-top: 12vh;
+  padding-bottom: 12vh;;
+}
+
+@mixin portfolio-item($bg, $txt) {
+  background-color: $bg;
+  > * {
+    color: $txt;
+  }
+}
+
 .text-center {
   text-align: center;
 }
