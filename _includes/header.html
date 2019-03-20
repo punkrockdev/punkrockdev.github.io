@@ -1,16 +1,29 @@
 <header class="site-header">
-    <div class="site-image-wrapper">
+    <!-- <div class="site-image-wrapper">
         <picture>
             <source srcset="images/header_bg.webp" type="image/webp">
             <source srcset="images/header_bg.png" type="image/png">
             <img class="site-image" src="images/header_bg.png" alt="laptop on a desk">
         </picture>
         <div class="site-image-white-triangle"></div>
+    </div> -->
+
+    <div class="row clearfix vcenter">
+      <div class="col-2-3 site-header-column">
+        <div class="text-center">
+            <!-- <a class="site-title" href="{{ site.baseurl }}/" alt="{{ site.title }}"><img src="/images/logo.svg"></a> -->
+            <h1 class="site-heading">Punk Rock Dev</h1>
+            <h2 class="site-subtitle">Developing apps with a kick!</h2>
+        </div>
+      </div>
     </div>
 
-    <div class="site-title-wrapper">
-        <a class="site-title" href="{{ site.baseurl }}/" alt="{{ site.title }}"><img src="/images/logo.svg"></a>
-
-        <h2 class="site-subtitle">Developing apps with a kick!</h2>
-    </div>
+    <div class="fullscreen-bg">
+      <div class="layer"></div>
+      <video loop muted autoplay class="fullscreen-bg-video">
+          <!-- <source src="video/big_buck_bunny.webm" type="video/webm"> -->
+          <source src="https://static.punkrockdev.com/file/punkrockdev/Edit+v5+HQ.mp4" type="video/mp4">
+          <!-- <source src="video/big_buck_bunny.ogv" type="video/ogg"> -->
+      </video>
+  </div>
 </header>
