@@ -10,6 +10,12 @@
   }
 }
 
+.vcenter {
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+
 .text-center {
   text-align: center;
 }
