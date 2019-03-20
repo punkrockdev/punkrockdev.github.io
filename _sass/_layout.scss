@@ -143,6 +143,7 @@
 .site-footer {
     width: 100%;
     /* margin: auto; */
+
     .wrapper {
       padding: 0;
     }
@@ -168,6 +169,10 @@
           }
         }
       }
+    }
+
+    form {
+      margin: 0;
     }
 }
 
@@ -393,6 +398,7 @@ section {
 
   p {
     margin: 0;
+    font-weight: 300;
   }
 
   .section-heading {
@@ -568,9 +574,14 @@ section {
 
 .contact-section {
   background-color: #fafafa;
-  p, label, input, textarea {
+  p {
     font: {
       size: 20px;
+    }
+  }
+  label, input, textarea {
+    font: {
+      size: 18px;
     }
     padding-left: 0;
   }
