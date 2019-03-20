@@ -25,12 +25,26 @@
 
     .site-title-wrapper {
         z-index: 2;
-        position: absolute;
-        top: 40%;
-        width: 100%;
-        @include media-query($on-palm) {
-            top: 30%;
-        }
+        top: 50%;
+        transform: translateY(-50%);
+        // @include media-query($on-palm) {
+        //     top: 30%;
+        // }
+    }
+
+    .site-heading {
+      color: #fff;
+      font-size: 80px;
+      margin: 0;
+      background-color: rgba(255,255,255, .8);
+      padding: 5px 20px;
+      color: #292929;
+      display: inline-block;
+      margin-bottom: 40px;
+    }
+
+    &-column {
+      margin-left: 16.66666667%;
     }
 }
 
@@ -56,7 +70,8 @@
     text-align: center;
     width: 98%;
     padding-left: 1%;
-    font-size: 68px;
+    font-size: 60px;
+    color: #f5f5f5;
 
     @include media-query($on-laptop) {
         font-size: 64px;
@@ -392,6 +407,8 @@ p {
 
 section {
   @extend %section-gutter;
+  background-color: #fff;
+  z-index: 9;
   .row {
     padding: 0;
   }
@@ -404,6 +421,11 @@ section {
   .section-heading {
     margin-bottom: 7vh;
   }
+}
+
+.intro-section {
+  background-color: #fff;
+  position: relative;
 }
 
 .portfolio-section {
@@ -591,4 +613,54 @@ section {
       margin: 0;
     }
   }
+}
+
+.site-header {
+  height: 100vh;
+  border-bottom: 3px solid #292929;
+}
+
+.fullscreen-bg {
+  background-image: url("../images/poster.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+
+  .layer {
+    background-color:rgba(1,1,1,.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+
+    &-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -o-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      background-image: url("../images/poster.png");
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      z-index: -100;
+    }
 }
