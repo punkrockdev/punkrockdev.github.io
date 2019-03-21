@@ -5,7 +5,7 @@
   background-color: #fff;
   padding: 0px;
   box-shadow: 10px 2px 2px rgba(66,66,66,.1);
-  height: 65px;
+  height: 3.8rem;
 
   &-absolute {
     position: absolute;
@@ -20,7 +20,7 @@
     margin: 0;
     .nav-item {
       display: inline-block;
-      margin-left: 30px;
+      margin-left: 1.5rem;
 
       a {
         color: #292929;
@@ -34,9 +34,13 @@
         a {
           background-color: #292929;
           padding: 0px 60px;
-          line-height: 65px;
           display: inline-block;
           color: #fff;
+          line-height: 3.8rem;
+
+          @include media-query($on-palm) {
+            padding: 0 3rem;
+          }
         }
       }
     }
