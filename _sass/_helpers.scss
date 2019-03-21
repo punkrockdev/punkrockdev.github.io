@@ -1,6 +1,16 @@
 %section-gutter {
   padding-top: 12vh;
-  padding-bottom: 12vh;;
+  padding-bottom: 12vh;
+
+  @include media-query($on-laptop) {
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+  }
+
+  @include media-query($on-palm) {
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+  }
 }
 
 @mixin portfolio-item($bg, $txt) {
@@ -8,6 +18,14 @@
   > * {
     color: $txt;
   }
+}
+
+.grey-background {
+  background-color: #fafafa;
+}
+
+.white-background {
+  background-color: #fff;
 }
 
 .vcenter {
