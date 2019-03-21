@@ -1,4 +1,16 @@
 jQuery(document).ready(function($){
+    // check when nav is in the viewport
+    let waypoint = new Waypoint({
+      element: document.getElementById('nav'),
+      handler: function(direction) {
+        if (direction == "down") {
+          $(this.element).addClass("nav-fixed").removeClass("nav-absolute");
+        } else if (direction == "up") {
+          $(this.element).addClass("nav-absolute").removeClass("nav-fixed");
+        }
+      }
+    });
+
     // Lets capture a specific page view event for easy funnels
     if (typeof analytics !== 'undefined') {
         analytics.track("Viewed subscription form");
