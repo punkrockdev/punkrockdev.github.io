@@ -1,0 +1,20 @@
+.intro-section {
+  padding-top: 18vh;
+  position: relative;
+
+  &-column {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 30px;
+
+    @include media-query-min($on-palm) {
+      width: 70%;
+      margin-left: 15%;
+    }
+
+    @include media-query-min($on-desktop) {
+      width: 50%;
+      margin-left: 25%;
+    }
+  }
+}

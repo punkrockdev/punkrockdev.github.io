@@ -1,0 +1,21 @@
+.contact-section {
+  p {
+    font: {
+      size: 20px;
+    }
+  }
+
+  label, input, textarea {
+    font: {
+      size: 18px;
+    }
+    padding-left: 0;
+  }
+  
+  form {
+    input {
+      padding: 7px 0;
+      margin: 0;
+    }
+  }
+}

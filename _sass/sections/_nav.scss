@@ -1,0 +1,44 @@
+.nav {
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  padding: 0px;
+  box-shadow: 10px 2px 2px rgba(66,66,66,.1);
+  height: 65px;
+
+  &-absolute {
+    position: absolute;
+  }
+
+  &-fixed {
+    position: fixed;
+  }
+
+  .nav-list {
+    float: right;
+    margin: 0;
+    .nav-item {
+      display: inline-block;
+      margin-left: 30px;
+
+      a {
+        color: #292929;
+        font: {
+          size: 20px;
+          weight: 400;
+        }
+      }
+
+      &-contact {
+        a {
+          background-color: #292929;
+          padding: 0px 60px;
+          line-height: 65px;
+          display: inline-block;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

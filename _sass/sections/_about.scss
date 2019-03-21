@@ -1,0 +1,73 @@
+.about-section {
+  .about-col {
+    margin-bottom: 70px;
+    padding-left: 30px;
+
+    &-last {
+      clear: left;
+      margin: 0;
+    }
+
+    .about-heading {
+      color: #292929;
+      margin-top: 20px;
+
+      font: {
+        size: 30px;
+        weight: 500;
+      }
+
+      text: {
+        transform: uppercase;
+      }
+
+      a {
+        color: #292929;
+        text-decoration: none;
+        font-size: 70%;
+
+        &.about-social-link {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .about-description {
+      font: {
+        size: 18px;
+        weight: 300;
+      }
+    }
+
+    .social-icon-link {
+
+      .fa-github {
+        margin-left: 10px;
+      }
+
+      [class*='fa-'] {
+        font: {
+          size: 20px;
+        }
+      }
+    }
+
+    .picture-wrapper {
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 40px;
+
+      .mugshot-hidden {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+      }
+
+      &:hover {
+        .mugshot-hidden {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
