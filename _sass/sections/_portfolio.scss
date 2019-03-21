@@ -4,7 +4,6 @@
   [class*='col-'] {
     padding: 0px;
   }
-
   .wrapper {
     @include media-query($on-palm) {
        padding: 0;
@@ -15,7 +14,7 @@
      padding: 80px 50px;
 
      @include media-query($on-desktop) {
-        padding: 60px 25px;
+        padding: 60px 50px;
      }
 
      @include media-query-min($on-laptop) {
@@ -35,11 +34,26 @@
    }
 
    .portfolio-description {
+     padding-left: 4rem;
+     text-align: center;
+
+     @include media-query($on-desktop) {
+       padding-left: 1.5rem;
+     }
+
+    @include media-query($on-laptop) {
+        padding-left: 0;
+        margin-left: 10%;
+     }
+
+     @include media-query($on-palm) {
+       margin-left: 0;
+     }
+
      h3 {
-       margin-top: 0;
+       margin-top: 20px;
        margin-bottom: 10px;
        text: {
-         align: left;
          transform: uppercase;
        }
 
@@ -50,13 +64,15 @@
 
        @include media-query($on-desktop) {
          text-align: center;
+         font-size: 30px;
+       }
+
+       @include media-query($on-laptop) {
          margin-top: 60px;
-         font-size: 25px;
        }
      }
 
      p {
-       text-align: left;
        line-height: 1.4;
        font: {
          size: 18px;
@@ -64,7 +80,7 @@
        }
 
        @include media-query($on-desktop) {
-           font-size: 16px;
+           font-size: 18px;
            text-align: center;
        }
 
@@ -81,7 +97,7 @@
    }
 
    .app-screenshot {
-     height: 50vh;
+     height: 40vh;
      background-size: cover;
      background-repeat: no-repeat;
      position: relative;
@@ -89,18 +105,24 @@
          height: 25vh;
      }
 
+     @include media-query($on-laptop) {
+       height: 30vh;
+       margin-left: 10%;
+     }
+
+     @include media-query($on-palm) {
+       height: 20vh;
+       margin-left: 0;
+     }
+
      &.imGraetzl {
        background-image: url("../images/discography/imgraetzl.webp");
      }
 
      &.pos {
-       height: 40vh;
        background-image: url("../images/discography/POSMusic.webp");
        background-position: left top;
        background-size: cover;
-       @include media-query($on-desktop) {
-           height: 25vh;
-       }
      }
 
      &.crosho {
@@ -127,7 +149,7 @@
        weight: 400;
      }
 
-     @include media-query($on-palm) {
+     @include media-query($on-laptop) {
          margin-top: 50px;
      }
    }

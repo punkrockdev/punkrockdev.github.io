@@ -78,6 +78,12 @@
     width: 80%;
 }
 
+.col-sm-4-5 {
+  @include media-query($on-laptop) {
+      width: 80%;
+  }
+}
+
 .col-2-3 {
     width: 66.66%;
 }
