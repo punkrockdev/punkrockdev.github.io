@@ -78,9 +78,21 @@
     width: 80%;
 }
 
+.col-md-12 {
+  @include media-query($on-desktop) {
+      width: 100%;
+  }
+}
+
 .col-sm-4-5 {
   @include media-query($on-laptop) {
       width: 80%;
+  }
+}
+
+.col-sm-1-2 {
+  @include media-query($on-laptop) {
+      width: 50%;
   }
 }
 
@@ -112,6 +124,7 @@
       width: 100%;
   }
 }
+
 
 .col-sm-offset-0 {
   @include media-query($on-laptop) {

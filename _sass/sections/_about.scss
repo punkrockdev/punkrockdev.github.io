@@ -3,6 +3,18 @@
     margin-bottom: 70px;
     padding-left: 30px;
 
+    @include media-query($on-palm) {
+      padding: 0 2rem;
+    }
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+
+    @media (max-width: 500px) {
+      padding: 0 1rem;
+    }
+
     &-last {
       clear: left;
       margin: 0;
