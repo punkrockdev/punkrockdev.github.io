@@ -44,6 +44,7 @@
     }
 
     &-column {
+      padding: 0;
       margin-left: 16.66666667%;
     }
 }
@@ -52,39 +53,33 @@
     font-size: 26px;
     line-height: 56px;
     letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+    margin-bottom: 50px;
     text-align: center;
     width: 100%;
+    display: block;
     &, &:visited { color: $grey-color-dark; }
-    @include media-query($on-palm) {
-        img {
-            width: 80%;
-        }
-    }
 }
 
 .site-subtitle {
-    clear: left;
-    float: left;
+    // clear: left;
+    // float: left;
     text-align: center;
-    width: 98%;
-    padding-left: 1%;
     font-size: 60px;
+    margin: 0;
     color: #f5f5f5;
+    transform: rotate(5deg);
+    transition: none;
 
     @include media-query($on-laptop) {
         font-size: 64px;
     }
     @include media-query($on-laptop) {
-        font-size: 36px;
+        font-size: 50px;
     }
     @include media-query($on-palm) {
-        font-size: 28px;
-        transform: rotate(1deg);
+        font-size: 30px;
     }
     font-weight: 900;
-    transform: rotate(3deg);
 }
 
 .site-nav {

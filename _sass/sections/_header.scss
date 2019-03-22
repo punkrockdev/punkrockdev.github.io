@@ -1,19 +1,36 @@
 .site-header {
-  height: calc(100vh - 5px);
-  border-bottom: 5px solid #fff;
+  height: 100vh;
+  padding: 0 30px;
+  position: relative;
+
+  [class*='col-'] {
+    padding: 0px;
+  }
+
+  .row {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
   @include media-query($on-laptop) {
-    height: calc(80vh - 5px);
+    height: 70vh;
   }
 
   @include media-query($on-palm) {
-    height: calc(60vh - 5px);
+    height: 50vh;
   }
 
   .fullscreen-bg {
-    background-image: url("../images/poster.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include media-query($on-desktop) {
+      background-image: url("../images/header_bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
     position: fixed;
     top: 0;
     right: 0;
