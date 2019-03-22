@@ -31,6 +31,14 @@
      &.pos {
        @include portfolio-item(#3e3e3e, #fff);
      }
+
+     &.where {
+       @include portfolio-item(#3e3e3e, #fff);
+     }
+
+     &.collapsable-hidden {
+       display: none;
+     }
    }
 
    .portfolio-description {

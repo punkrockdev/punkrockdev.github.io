@@ -11,6 +11,13 @@ jQuery(document).ready(function($){
       }
     });
 
+    //see more button for portfolio
+    $("#collapsable").click((e) => {
+      e.preventDefault();
+      const itemsToShow = $(".collapsable-hidden").slice(0, 2);
+      $(itemsToShow).removeClass("collapsable-hidden");
+    });
+
     // Lets capture a specific page view event for easy funnels
     if (typeof analytics !== 'undefined') {
         analytics.track("Viewed subscription form");
