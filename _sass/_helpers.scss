@@ -2,7 +2,7 @@
   padding-top: 12vh;
   padding-bottom: 12vh;
 
-  @include media-query($on-laptop) {
+  @include media-query($on-desktop) {
     padding-top: 8vh;
     padding-bottom: 8vh;
   }

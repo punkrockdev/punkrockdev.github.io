@@ -2,10 +2,13 @@
   left: 0;
   right: 0;
   top: 0;
-  background-color: #fff;
   padding: 0px;
-  box-shadow: 10px 2px 2px rgba(66,66,66,.1);
-  height: 3.8rem;
+
+  &-section {
+    background-color: #fff;
+    height: 3.8rem;
+    box-shadow: 10px 2px 2px rgba(66,66,66,.1);
+  }
 
   &-absolute {
     position: absolute;
@@ -37,13 +40,13 @@
       &-contact {
         a {
           background-color: #292929;
-          padding: 0px 60px;
+          padding: 1px 60px;
           display: inline-block;
           color: #fff;
           line-height: 3.8rem;
 
           @include media-query($on-palm) {
-            padding: 0 3rem;
+            padding: 1px 3rem;
           }
         }
       }

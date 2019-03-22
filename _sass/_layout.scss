@@ -69,12 +69,13 @@
     color: #f5f5f5;
     transform: rotate(5deg);
     transition: none;
+    line-height: 1.2;
 
     @include media-query($on-laptop) {
         font-size: 64px;
     }
     @include media-query($on-laptop) {
-        font-size: 50px;
+        font-size: 36px;
     }
     @include media-query($on-palm) {
         font-size: 30px;
