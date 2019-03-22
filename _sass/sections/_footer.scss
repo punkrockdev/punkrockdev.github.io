@@ -1,5 +1,6 @@
 .site-footer {
     width: 100%;
+    background-color: #292929;
     /* margin: auto; */
 
     .wrapper {
@@ -53,14 +54,16 @@
 
         background-image: linear-gradient(rgba(1,1,1,.02),rgba(1,1,1,.02)),url("../images/footer_guitar.jpg");
         background-size: cover;
+        background-position: center center;
         background-repeat: no-repeat;
-
+        @include media-query($on-palm) {
+          padding-top: 35vh;
+        }
     }
-
 
     .footer-col-wrapper {
         padding-right: 0;
-        padding-top: 30px;
+        padding-top: 0px;
         width: 100%;
         float: none !important;
         #made-with { display: block; }
