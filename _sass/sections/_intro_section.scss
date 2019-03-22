@@ -2,6 +2,10 @@
   padding-top: 18vh;
   position: relative;
 
+  @include media-query($on-palm) {
+    padding-top: 12vh;
+  }
+
   &-column {
     width: 100%;
     margin-left: 0;
