@@ -2,8 +2,8 @@
   padding-top: 18vh;
   position: relative;
 
-  @include media-query($on-palm) {
-    padding-top: 12vh;
+  @include media-query(480px) {
+    padding-top: 15vh;
   }
 
   &-column {
