@@ -6,6 +6,10 @@
     margin-left: 0;
     padding: 0 30px;
 
+    h2 {
+      margin-top: 60px;
+    }
+
     @include media-query-min($on-palm) {
       width: 70%;
       margin-left: 15%;

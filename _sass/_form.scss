@@ -127,21 +127,7 @@ form {
 
         input { border-radius: 0; }
 
-        input[type="submit"] {
-          padding: 0;
-          color: rgba(255,255,255,.8);
-          border: 2px solid rgba(255,255,255,.8);
-          background: #292929;
-          font-size: 14px;
-          margin-left: 0;
-          height: 32px;
-          line-height: 1em;
-          width: 100px;
-          margin: 0;
-          vertical-align: middle;
-          margin-left: 5px;
-          border-radius: 3px;
-        }
+        
         .mc-field-group {
             width: 20%;
             display: inline-block;
