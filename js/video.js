@@ -22,7 +22,6 @@ jQuery(document).ready(function($) {
     if ($(document).width() > breakpoint) {
 
       if (document.querySelectorAll("#header-video > source").length < 1) {
-        console.log(this);
         var source1 = document.createElement("source");
         source1.setAttribute("src", srcMp4);
         source1.setAttribute("type", "video/mp4");
