@@ -36,7 +36,7 @@
 
     .footer-content {
         float: left;
-        padding-top: 70vh;
+        padding-top: 60vh;
         width: 100%;
         font-size: $small-font-size;
         @include media-query($on-desktop) { font-weight: 900; }
@@ -54,8 +54,11 @@
 
         background-image: linear-gradient(rgba(1,1,1,.02),rgba(1,1,1,.02)),url("../images/footer_guitar.jpg");
         background-size: cover;
-        background-position: center center;
+        background-position: top center;
         background-repeat: no-repeat;
+        @include media-query($on-laptop) {
+          padding-top: 50vh;
+        }
         @include media-query($on-palm) {
           padding-top: 35vh;
         }
