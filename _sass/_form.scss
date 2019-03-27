@@ -1,4 +1,14 @@
-@import "slider";
+#mc_embed_signup.newsletter-wrapper {
+  input[type="submit"].button {
+    background-color: #000;
+    margin: 0;
+    padding: 0 15px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 0;
+    height: 36px;
+  }
+}
 
 @mixin accent-button() {
     color: #fff;
@@ -127,7 +137,7 @@ form {
 
         input { border-radius: 0; }
 
-        
+
         .mc-field-group {
             width: 20%;
             display: inline-block;
@@ -175,6 +185,9 @@ form {
         color: $accent-color;
         padding: 0;
         font-size: 16px;
+        position: absolute;
+        margin: 0;
+        left: 0;
     }
 }
 
@@ -200,7 +213,7 @@ form {
                 width: auto;
                 display: block;
                 border: 4px solid $black-color;
-                background: none;
+                background-color: #000;
                 @include media-query($on-palm) {
                     width: 100%;
                 }
