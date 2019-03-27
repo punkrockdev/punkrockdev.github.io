@@ -10,15 +10,8 @@ gulp.task('serve', function () {
     gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
 
-// // just resize the images a bit
-// gulp.task('image', function () {
-//   gulp.src('./images/*')
-//     .pipe(image())
-//     .pipe(gulp.dest('./images'));
-// });
-
 // create .webp version of the images
-gulp.task('image-webp', function () {
+gulp.task('images', function () {
   gulp.src('./images/**/*.{jpg,png,tif}')
     .pipe(webp({preset: 'photo', quality: 90, method: 6, lossless: true}))
     .pipe(gulp.dest('./images/'));
