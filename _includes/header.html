@@ -1,4 +1,6 @@
 <header class="site-header">
+
+  <!-- if header is homepage add class site-header-homepage -->
     <div class="layer"></div>
     <nav class="nav nav-header">
       <div class="wrapper grid">
@@ -13,7 +15,10 @@
         <h2 class="site-subtitle">Developing apps with a kick!</h2>
     </div>
   </div>
+  {% if page.show_video == true %}
+  <video autoplay loop width="100%" height="100%"  poster="data:image/gif,AAAA" class="hide-desktop" id="header-video">
+  </video>
+  {% endif %}
 
-    <video autoplay loop width="100%" height="100%"  poster="data:image/gif,AAAA" class="hide-desktop" id="header-video">
-    </video>
+
 </header>
