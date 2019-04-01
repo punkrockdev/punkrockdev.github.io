@@ -1,5 +1,5 @@
 .site-header {
-  height: 100vh;
+  height: 60vh;
   position: relative;
 
   [class*='col-'] {
@@ -14,18 +14,21 @@
     transform: translateY(-50%);
     z-index: 12;
   }
+  &-homepage {
+    height: 100vh;
+    @include media-query($on-desktop) {
+      height: 75vh;
+    }
 
-  @include media-query($on-desktop) {
-    height: 75vh;
+    @include media-query($on-laptop) {
+      height: 70vh;
+    }
+
+    @include media-query($on-palm) {
+      height: 50vh;
+    }
   }
 
-  @include media-query($on-laptop) {
-    height: 70vh;
-  }
-
-  @include media-query($on-palm) {
-    height: 50vh;
-  }
 
   .header-content {
     padding: 0 30px;
