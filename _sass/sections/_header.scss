@@ -42,6 +42,10 @@
      right: 0;
      position: absolute;
      z-index: 11;
+     display:none;
+     @include media-query-min($on-desktop + 1) {
+       display: block;
+     }
    }
 
   .poster {

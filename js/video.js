@@ -16,9 +16,9 @@ jQuery(document).ready(function($) {
     if (video === null) {
       return false;
     }
-    
+
     // Remove existing source tags for mobile
-    if ($(document).width() < breakpoint + 1) {
+    if ($(document).width() <= breakpoint + 1) {
       while (video.firstChild) {
         video.removeChild(video.firstChild);
       }
