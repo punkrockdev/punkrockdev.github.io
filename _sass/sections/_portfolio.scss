@@ -1,144 +1,142 @@
 .portfolio-section {
   clear: both;
 
-  [class*='col-'] {
+  [class*="col-"] {
     padding: 0px;
   }
   .wrapper {
     @include media-query($on-palm) {
-       padding: 0;
+      padding: 0;
     }
   }
 
-   .portfolio-item {
-     padding: 80px 50px;
+  .portfolio-item {
+    padding: 80px 50px;
 
-     @include media-query($on-desktop) {
-        padding: 60px 50px;
-     }
+    @include media-query($on-desktop) {
+      padding: 60px 50px;
+    }
 
-     @include media-query-min($on-laptop) {
-       -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-        -moz-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-        box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
-        margin-bottom: 10vh;
-     }
+    @include media-query-min($on-laptop) {
+      -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      margin-bottom: 10vh;
+    }
 
-     &.imGraetzl {
+    &.imGraetzl {
       @include portfolio-item(#fdfdfd, #292929);
-     }
+    }
 
-     &.pos {
-       @include portfolio-item(#3e3e3e, #fff);
-     }
+    &.pos {
+      @include portfolio-item(#3e3e3e, #fff);
+    }
 
-     &.where {
-       @include portfolio-item(#3e3e3e, #fff);
-     }
+    &.where {
+      @include portfolio-item(#3e3e3e, #fff);
+    }
 
-     &.collapsable-hidden {
-       display: none;
-     }
-   }
+    &.collapsable-hidden {
+      display: none;
+    }
+  }
 
-   .portfolio-description {
-     padding-left: 4rem;
-     text-align: center;
+  .portfolio-description {
+    padding-left: 4rem;
 
-     @include media-query($on-desktop) {
-       padding-left: 1.5rem;
-     }
+    @include media-query($on-desktop) {
+      padding-left: 3.5rem;
+    }
 
     @include media-query($on-laptop) {
-        padding-left: 0;
-        margin-left: 10%;
-     }
+      margin-left: 10%;
+      text-align: center;
+    }
 
-     @include media-query($on-palm) {
-       margin-left: 0;
-     }
+    @include media-query($on-palm) {
+      margin-left: 0;
+      padding-left: 0;
+    }
 
-     h3 {
-       margin-top: 20px;
-       margin-bottom: 10px;
-       text: {
-         transform: uppercase;
-       }
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text: {
+        transform: uppercase;
+      }
 
-       font: {
-         weight: 500;
-         size: 35px;
-       }
+      font: {
+        weight: 500;
+        size: 35px;
+      }
 
-       @include media-query($on-desktop) {
-         text-align: center;
-         font-size: 30px;
-       }
+      @include media-query($on-desktop) {
+        font-size: 30px;
+      }
 
-       @include media-query($on-laptop) {
-         margin-top: 60px;
-       }
-     }
+      @include media-query($on-laptop) {
+        margin-top: 60px;
+      }
+    }
 
-     p {
-       line-height: 1.4;
-       font: {
-         size: 18px;
-         weight: 300;
-       }
+    p {
+      line-height: 1.4;
+      text-align: left;
+      font: {
+        size: 18px;
+        weight: 300;
+      }
 
-       @include media-query($on-desktop) {
-           font-size: 18px;
-           text-align: center;
-       }
+      @include media-query($on-desktop) {
+        font-size: 18px;
+      }
 
-       @include media-query($on-laptop) {
-           font-size: 20px;
-           text-align: center;
-       }
+      @include media-query($on-laptop) {
+        font-size: 20px;
+        text-align: center;
+      }
 
-       @include media-query($on-palm) {
-           font-size: 18px;
-           text-align: center;
-       }
-     }
-   }
+      @include media-query($on-palm) {
+        font-size: 18px;
+      }
+    }
+  }
 
-   .app-screenshot {
-     height: 40vh;
-     background-size: cover;
-     background-repeat: no-repeat;
-     position: relative;
-     @include media-query($on-desktop) {
-         height: 25vh;
-     }
+  .app-screenshot {
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    @include media-query($on-desktop) {
+      height: 25vh;
+    }
 
-     @include media-query($on-laptop) {
-       height: 30vh;
-       margin-left: 10%;
-     }
+    @include media-query($on-laptop) {
+      height: 30vh;
+      margin-left: 10%;
+    }
 
-     @include media-query($on-palm) {
-       height: 20vh;
-       margin-left: 0;
-     }
+    @include media-query($on-palm) {
+      height: 20vh;
+      margin-left: 0;
+    }
 
-     &.imGraetzl {
-       background-image: url("../images/discography/imgraetzl.webp");
-     }
+    &.imGraetzl {
+      background-image: url("../images/discography/imgraetzl.webp");
+    }
 
-     &.pos {
-       background-image: url("../images/discography/POSMusic.webp");
-       background-position: left top;
-       background-size: cover;
-     }
+    &.pos {
+      background-image: url("../images/discography/POSMusic.webp");
+      background-position: left top;
+      background-size: cover;
+    }
 
-     &.crosho {
-       background-image: url("../images/discography/crosho.webp");
-     }
+    &.crosho {
+      background-image: url("../images/discography/crosho.webp");
+    }
 
-     &.where {
-       background-image: url("../images/discography/where2help.webp");
-     }
-   }
+    &.where {
+      background-image: url("../images/discography/where2help.webp");
+    }
+  }
 }
