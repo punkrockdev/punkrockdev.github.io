@@ -7,7 +7,7 @@ excerpt: >
     your company's cash flow 📈 and estimate your future taxes and social insurance.
 ---
 
-Having trouble keeping track of your company's cash flow numbers? 🙃 Drowning in 
+Having trouble keeping track of your company's cash flow numbers? 🙃 Drowning in
 boring Excel sheets full of detailed numbers, but failing to see the bigger
 picture? 📖😕 Afraid of that upcoming tax / social insurance bill you're going to
 have to pay? 💸😰 Well rest easy! 😎 With this DIY Accounting Starter Kit 🗄📒 you can
@@ -73,7 +73,7 @@ Fill out your name and email below to get your copy of the
 DIY Accounting Starter Kit and start tracking your business numbers today!
 🤓📒📈
 
-<div class="body-newsletter">
+<div class="body-newsletter accounting-austria-form">
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
 <form action="https://punkrockdev.us14.list-manage.com/subscribe/post?u=53aecd554422f8ec674b24a16&amp;id=d2c61c9268" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -102,7 +102,3 @@ DIY Accounting Starter Kit and start tracking your business numbers today!
 </div>
 <!--End mc_embed_signup-->
 </div>
-
-<style>
-.site-footer #mc_embed_signup { visibility: hidden; }
-</style>

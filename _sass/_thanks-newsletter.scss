@@ -1,0 +1,30 @@
+.thanks-newsletter {
+  #mc_embed_signup
+  #mc_embed_signup_scroll {
+    margin-top: 30px;
+
+    @include media-query($on-desktop) {
+      width: 75%;
+      margin-left: 15%;
+    }
+
+    @include media-query($on-palm) {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    h2, p {
+      color: #292929;
+      text-align: left;
+    }
+    form {
+      margin: 0;
+    }
+    .mc-field-group {
+      width: 100%;
+    }
+    input {
+      display: block;
+    }
+  }
+}

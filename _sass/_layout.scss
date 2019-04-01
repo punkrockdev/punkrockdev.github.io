@@ -178,12 +178,13 @@ p {
     text-align: right;
 }
 
-// .page-content {
-//     padding: $spacing-unit 0;
-//     @include media-query($on-palm) {
-//         padding: 0;
-//     }
-// }
+.page-content {
+  .page-row {
+    padding: 50px;
+    overflow: auto;
+    clear: both;
+  }
+}
 
 .page-heading {
     font-size: 20px;
