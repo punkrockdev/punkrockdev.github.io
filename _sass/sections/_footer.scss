@@ -66,12 +66,13 @@
 
     .footer-col-wrapper {
         padding-right: 0;
-        padding-top: 30px;
+        padding-top: 0;
         width: 100%;
         float: none !important;
         #made-with { display: block; }
         @include media-query($on-desktop) {
             margin-left: 0;
+            padding-top: 0px;
         }
         img {
             padding: 1em 0;
