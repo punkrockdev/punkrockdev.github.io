@@ -11,6 +11,12 @@ jQuery(document).ready(function($) {
     let breakpoint = 1200;
 
     var video = document.getElementById("header-video");
+
+    // stop execution if there is no video
+    if (video === null) {
+      return false;
+    }
+    
     // Remove existing source tags for mobile
     if ($(document).width() < breakpoint + 1) {
       while (video.firstChild) {

@@ -42,10 +42,10 @@ jQuery(document).ready(function($){
       handler: function(direction) {
         if (direction == "down") {
           $(this.element).addClass("nav-fixed").removeClass("nav-absolute");
-          video.pause();
+          video !== null ? video.pause() : false
         } else if (direction == "up") {
           $(this.element).addClass("nav-absolute").removeClass("nav-fixed");
-          video.play();
+          video !== null ? video.play() : false
         }
       }
     });
