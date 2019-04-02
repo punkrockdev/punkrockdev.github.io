@@ -2,11 +2,16 @@
   position: relative;
   padding-left: 30px;
   padding-right: 30px;
+  
+  .doodle {
+    left: -100px;
+  }
 
   &-column {
     width: 100%;
     margin-left: 0;
     padding: 0px;
+    position: relative;
 
     h2 {
       margin-top: 60px;

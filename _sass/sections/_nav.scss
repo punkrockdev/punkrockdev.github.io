@@ -33,7 +33,7 @@
         color: #292929;
         text-decoration: none;
         font: {
-          size: 20px;
+          size: 18px;
           weight: 400;
         }
       }
@@ -47,7 +47,7 @@
           line-height: 3.8rem;
 
           @include media-query($on-palm) {
-            padding: 1px 3rem;
+            padding: 1px 2rem;
           }
         }
       }

@@ -22,6 +22,7 @@
 
   .contact-column {
     padding-right: 0;
+    position: relative;
     @media (max-width: 500px) {
       padding: 0 1rem;
     }

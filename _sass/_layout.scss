@@ -269,15 +269,13 @@ p {
 .doodle {
     padding-top: 2em;
     text-align: center;
+    padding-top: 0;
+    position: absolute;
+    width: 100px;
+    left: 0;
+    top: 0;
     img { max-width: 100%}
-    @include media-query($on-desktop) {
-        padding-top: 0;
-        position: absolute;
-        right: 0.5em;
-        width: 100px;
-    }
-    @include media-query($on-laptop) { width: 63px; }
-    @include media-query($on-palm) { width: 75px; }
+    @include media-query($on-desktop) { display: none}
 }
 
 /**

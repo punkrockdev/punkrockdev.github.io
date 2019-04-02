@@ -1,8 +1,9 @@
 .portfolio-section {
   clear: both;
 
-  [class*="col-"] {
+  [class*="col"] {
     padding: 0px;
+    position: relative;
   }
   .wrapper {
     @include media-query($on-palm) {
