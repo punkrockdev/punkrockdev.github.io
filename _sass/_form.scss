@@ -6,7 +6,7 @@
     display: inline-block;
     vertical-align: middle;
     border-radius: 0;
-    height: 36px;
+    height: 35px;
   }
 }
 
@@ -117,6 +117,7 @@ form {
         .clear {
           display: inline-block;
           clear: none;
+          vertical-align: middle;
         }
 
         h2 {
