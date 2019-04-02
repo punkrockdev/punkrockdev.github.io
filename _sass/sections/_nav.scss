@@ -3,6 +3,7 @@
   right: 0;
   top: 0;
   padding: 0px;
+  z-index: 99;
 
   &-section {
     background-color: #fff;
@@ -33,8 +34,12 @@
         color: #292929;
         text-decoration: none;
         font: {
-          size: 18px;
+          size: 20px;
           weight: 400;
+        }
+
+        @include media-query($on-laptop) {
+          font-size: 18px;
         }
       }
 
