@@ -36,19 +36,33 @@ jQuery(document).ready(function($){
     });
 
     let video = document.getElementById("header-video");
-    // check when nav is in the viewport
-    let waypoint = new Waypoint({
-      element: document.getElementById('nav'),
-      handler: function(direction) {
-        if (direction == "down") {
-          $(this.element).addClass("nav-fixed").removeClass("nav-absolute");
-          video !== null ? video.pause() : false
-        } else if (direction == "up") {
-          $(this.element).addClass("nav-absolute").removeClass("nav-fixed");
-          video !== null ? video.play() : false
+    let nav = document.getElementById('nav')
+    // check when nav is in the viewport only if there is nav
+    if (nav) {
+      // check when nav is in the viewport
+
+      let waypoint = new Waypoint({
+        element: nav,
+        handler: function(direction) {
+          if (direction == "down") {
+            $(this.element).addClass("nav-fixed").removeClass("nav-absolute");
+
+            if (video) {
+              video.pause();
+            }
+
+          } else if (direction == "up") {
+            $(this.element).addClass("nav-absolute").removeClass("nav-fixed");
+
+            if (video) {
+              video.play();
+            }
+
+          }
         }
-      }
-    });
+      });
+    }
+
 
     //see more button for portfolio
     $("#collapsable").click((e) => {
