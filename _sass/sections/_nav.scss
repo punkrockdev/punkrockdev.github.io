@@ -20,7 +20,21 @@
   }
 
   .nav-list {
-    float: right;
+
+    &-left {
+      float: left;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      @include media-query($on-laptop) {
+        display: none;
+      }
+    }
+
+    &-right {
+      float: right;
+    }
+
     margin: 0;
     .nav-item {
       display: inline-block;
