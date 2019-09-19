@@ -49,6 +49,7 @@
         size: 16px;
         weight: 300;
       }
+      text-align: left;
     }
 
     .social-icon-link {
@@ -64,22 +65,22 @@
       }
     }
 
-    .picture-wrapper {
-      position: relative;
-      cursor: pointer;
-      margin-bottom: 40px;
-
-      .mugshot-hidden {
-        position: absolute;
-        top: 0;
-        opacity: 0;
-      }
-
-      &:hover {
-        .mugshot-hidden {
-          opacity: 1;
-        }
-      }
-    }
+    // .picture-wrapper {
+    //   position: relative;
+    //   cursor: pointer;
+    //   margin-bottom: 40px;
+    // 
+    //   .mugshot-hidden {
+    //     position: absolute;
+    //     top: 0;
+    //     opacity: 0;
+    //   }
+    // 
+    //   &:hover {
+    //     .mugshot-hidden {
+    //       opacity: 1;
+    //     }
+    //   }
+    // }
   }
 }
