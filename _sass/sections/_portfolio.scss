@@ -25,17 +25,17 @@
       margin-bottom: 10vh;
     }
 
-    &.imGraetzl {
+    &.light {
       @include portfolio-item(#fdfdfd, #292929);
     }
 
-    &.pos {
+    &.dark {
       @include portfolio-item(#3e3e3e, #fff);
     }
 
-    &.where {
-      @include portfolio-item(#3e3e3e, #fff);
-    }
+    // &.where {
+    //   @include portfolio-item(#3e3e3e, #fff);
+    // }
 
     &.collapsable-hidden {
       display: none;
@@ -138,6 +138,30 @@
 
     &.where {
       background-image: url("../images/discography/where2help.webp");
+    }
+    
+    &.esquirrel {
+      background-image: url("../images/discography/esquirrel.webp");
+    }
+    
+    &.zoomero {
+      background-image: url("../images/discography/zoomero.webp");
+    }
+    
+    &.arxanima {
+      background-image: url("../images/discography/arxanima.webp");
+    }
+    
+    &.mysugr {
+      background-image: url("../images/discography/mysugr.webp");
+    }
+    
+    &.craftstrom {
+      background-image: url("../images/discography/craftstrom.webp");
+    }
+    
+    &.formunauts {
+      background-image: url("../images/discography/formunauts.webp");
     }
   }
 }

@@ -7,12 +7,15 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
+    "gulp-ext-replace": "^0.3.0",
     "gulp-image": "^4.3.0",
     "gulp-shell": "^0.7.0",
     "gulp-webp": "^3.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "images": "gulp images",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
