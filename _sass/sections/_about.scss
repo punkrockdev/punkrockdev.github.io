@@ -38,6 +38,10 @@
         size: 30px;
         weight: 500;
       }
+      
+      @include media-query($on-laptop) {
+        font-size: 22px;
+      }
 
       text: {
         transform: uppercase;
@@ -50,6 +54,9 @@
 
         &.about-social-link {
           font-size: 30px;
+          @include media-query($on-laptop) {
+            font-size: 22px;
+          }
         }
       }
     }
