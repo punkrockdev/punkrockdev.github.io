@@ -63,12 +63,14 @@ jQuery(document).ready(function($){
       });
     }
 
-
     //see more button for portfolio
-    $("#collapsable").click((e) => {
+    $("button#collapsable").click(e => {
       e.preventDefault();
       const itemsToShow = $(".collapsable-hidden").slice(0, 2);
       $(itemsToShow).removeClass("collapsable-hidden");
+      if ($(".collapsable-hidden").length === 0) {
+        $("button#collapsable").remove();
+      }
     });
 
     // Lets capture a specific page view event for easy funnels
@@ -81,17 +83,17 @@ jQuery(document).ready(function($){
         console.log('submit form');
         var form = this;
         // we need to stop the form from submitting too early
-  	e.preventDefault();
+        e.preventDefault();
 
         var name = $("#name").val();
         var email = $("#email").val();
 
         // track this as an event. We only call the identify when we've confirmed the track event has completed
         analytics.track("Contact form submitted", function(){
-
-	    // identify the user, using the email address
-            // as a custom distinct_id and add a callback
-            // to submit the form once the identify call is complete
+        
+        // identify the user, using the email address
+        // as a custom distinct_id and add a callback
+        // to submit the form once the identify call is complete
   	    analytics.identify(email, {
   	        email: email,
   	        name: name

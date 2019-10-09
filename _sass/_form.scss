@@ -14,8 +14,8 @@
     color: #fff;
     border: 1px solid #292929;
     background: #292929;
-    font-weight: 300;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 16px;
     padding: 7px 5px;
     margin-left: auto;
     display: block;
@@ -23,11 +23,8 @@
     &:hover {
         background: rgba($accent-color, .3 )
     }
-    @include media-query-min($on-laptop) {
-        width: 60%;
-    }
     @include media-query-min($on-desktop) {
-        width: 200px;
+        min-width: 200px;
     }
 }
 
