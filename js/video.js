@@ -1,3 +1,6 @@
+// This script just loads the video when resizing the browser to make development easier
+// The video won't be loaded on small devices even without this code.
+
 jQuery(document).ready(function($) {
   loadVideo();
 
@@ -7,7 +10,7 @@ jQuery(document).ready(function($) {
 
   function loadVideo() {
     let srcMp4 =
-      "https://static.punkrockdev.com/file/punkrockdev/Edit+v5+HQ.mp4";
+      "https://static.punkrockdev.com/file/punkrockdev/header-600px-30s.mp4";
     let breakpoint = 1200;
 
     var video = document.getElementById("header-video");
