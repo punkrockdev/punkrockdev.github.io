@@ -13,13 +13,6 @@
   }
 }
 
-@mixin portfolio-item($bg, $txt) {
-  background-color: $bg;
-  > * {
-    color: $txt;
-  }
-}
-
 .grey-background {
   background-color: #fafafa;
 }

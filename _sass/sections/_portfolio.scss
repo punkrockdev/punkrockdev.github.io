@@ -1,3 +1,10 @@
+@mixin portfolio-item($bg, $txt) {
+  background-color: $bg;
+  > * {
+    color: $txt;
+  }
+}
+
 .portfolio-section {
   clear: both;
 
@@ -31,6 +38,10 @@
 
     &.dark {
       @include portfolio-item(#3e3e3e, #fff);
+    }
+    
+    &.dark2 {
+      @include portfolio-item(#232121, #fff);
     }
 
     // &.where {
