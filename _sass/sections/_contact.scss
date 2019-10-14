@@ -1,0 +1,52 @@
+.contact-section {
+  p {
+    font: {
+      size: 20px;
+    }
+  }
+
+  label, input, textarea {
+    font: {
+      size: 18px;
+    }
+    padding-left: 0;
+  }
+
+  form {
+    padding: 0;
+    input {
+      padding: 7px 0;
+      margin: 0;
+    }
+  }
+
+  .contact-column {
+    padding-right: 0;
+    position: relative;
+    @media (max-width: 500px) {
+      padding: 0 1rem;
+    }
+
+    @include media-query($on-laptop) {
+      width: 50%;
+      margin-left: 25%;
+    }
+
+    @include media-query($on-desktop) {
+      width: 70%;
+      margin-left: 15%;
+    }
+
+    @include media-query($on-palm) {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    width: 50%;
+    margin-left: 25%;
+
+    input[type="submit"] {
+      float: right;
+    }
+  }
+}

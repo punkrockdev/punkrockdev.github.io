@@ -1,0 +1,99 @@
+.site-footer {
+    width: 100%;
+    background-color: #292929;
+    /* margin: auto; */
+
+    .wrapper {
+      padding: 0;
+    }
+
+    .footer-bottom-links {
+      background-color: #292929;
+      clear: both;
+
+      .contact-list {
+        clear: both;
+        margin: 0;
+        text-align: center;
+
+        li {
+          display: inline-block;
+          margin: 0 10px;
+
+          a, i, svg {
+            color: #f5f5f5;
+            font-size: 14px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+
+    form {
+      margin: 0;
+    }
+
+    .footer-content {
+        float: left;
+        padding-top: 60vh;
+        width: 100%;
+        font-size: $small-font-size;
+        @include media-query($on-desktop) { font-weight: 900; }
+        @include media-query($on-laptop) {
+            font-size: $small-font-size-laptop;
+        }
+        @include media-query($on-palm) {
+            font-size: $small-font-size-mobile;
+        }
+
+        a, i, h2, p, label {
+          color: #f5f5f5;
+          font-weight: 300;
+       }
+
+        background-image: linear-gradient(rgba(1,1,1,.02),rgba(1,1,1,.02)),url("../images/footer.jpg");
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        @include media-query($on-laptop) {
+          padding-top: 50vh;
+        }
+        @include media-query($on-palm) {
+          padding-top: 35vh;
+        }
+    }
+
+    .footer-col-wrapper {
+        padding-right: 0;
+        padding-top: 0;
+        width: 100%;
+        float: none !important;
+        #made-with { display: block; }
+        @include media-query($on-desktop) {
+            margin-left: 0;
+            padding-top: 0px;
+        }
+        img {
+            padding: 1em 0;
+            width: 80%;
+        }
+    }
+
+    div.footer-col {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        float: none;
+        @include media-query($on-desktop) {
+          width: 100%;
+        }
+    }
+
+    .footer-col-1 {
+        width: 60%;
+        padding-left: 0;
+        @include media-query($on-desktop) {
+            width: 100%;
+        }
+    }
+}

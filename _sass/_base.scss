@@ -17,8 +17,8 @@ dl, dd, ol, ul, figure {
 
 
 @mixin selected-text {
-    background: $accent-color-light;
-    color: $black-color;
+    background: #292929;
+    color: #fff;
 }
 *::-moz-selection { @include selected-text }
 *::selection { @include selected-text }
@@ -116,7 +116,7 @@ a {
         color: $text-color;
         text-decoration: underline;
     }
-    
+
     svg { color: $black-color; }
 }
 
@@ -147,7 +147,7 @@ blockquote {
     @include media-query($on-palm) {
         padding-top: 0;
     }
-    
+
     &.no-leading {
         padding-top: 0;
     }
@@ -194,7 +194,7 @@ pre {
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
-    
+
     @include media-query($on-desktop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 6));
         max-width:         calc(#{$content-width} - (#{$spacing-unit} * 6));
@@ -208,7 +208,7 @@ pre {
         padding-right: $spacing-unit;
         padding-left: $spacing-unit;
     }
-    
+
     @include media-query($on-palm) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));

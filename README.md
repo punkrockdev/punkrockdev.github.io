@@ -10,9 +10,13 @@ Then develop using:
 
     jekyll serve
 
-Deploy by commiting, but first optimize images:
+Or even better if you want your browser to refresh automatically:
 
     gulp
+
+Deploy by commiting, but first optimize images:
+
+    gulp images
 
 Live on: <https://punkrockdev.com/>
 

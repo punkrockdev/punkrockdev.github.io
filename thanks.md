@@ -5,13 +5,13 @@ title: Thanks!
 
 *We've received your inquiry and will reply as soon as we can.*
 
-In the mean time, why not chill out
+In the meantime, why not chill out
 listening to [our mixtape][spotify-punkrockdev]
 or learn something new from our
 [startup-oriented newsletter](https://bit.ly/punkrockdev)?
 
 <p>
-<div class="raw show-laptop">
+<div class="raw show-laptop thanks-newsletter">
 {% include newsletter.html %}
 </div>
 </p>

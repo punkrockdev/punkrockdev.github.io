@@ -1,0 +1,27 @@
+// global section styles, styles for every section
+
+section {
+  @extend %section-gutter;
+  background-color: #fff;
+  z-index: 9;
+  .row {
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 300;
+  }
+
+  .section-heading {
+    margin-bottom: 7vh;
+
+    @include media-query($on-desktop) {
+        margin-bottom: 5vh;
+    }
+
+    @include media-query($on-palm) {
+      margin-bottom: 3vh;
+    }
+  }
+}

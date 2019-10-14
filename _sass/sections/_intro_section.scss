@@ -1,0 +1,31 @@
+.intro-section {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+  .doodle {
+    left: -100px;
+    width: 88px;
+  }
+
+  &-column {
+    width: 100%;
+    margin-left: 0;
+    padding: 0px;
+    position: relative;
+
+    h2 {
+      margin-top: 60px;
+    }
+
+    @include media-query-min($on-palm) {
+      width: 70%;
+      margin-left: 15%;
+    }
+
+    @include media-query-min($on-desktop) {
+      width: 50%;
+      margin-left: 25%;
+    }
+  }
+}
