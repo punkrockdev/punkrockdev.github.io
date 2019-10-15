@@ -1,8 +1,9 @@
 <!-- social metadata template from http://github.com/cagrimmett/jekyll-tools -->
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:type" content="{% if page.path contains '_posts' %}article{% else %}website{% endif %}">
-<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<meta property="og:image" content="{% if page.feature-img %}{{ page.feature-img | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.url }}/{{ site.avatar }}{% endif %}">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | replace:'.html','' | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:image" content="{% if page.feature_img %}{{ page.feature_img | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.avatar | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+<meta property="og:image:alt" content="{% if page.feature_img_alt %}{{ page.feature_img_alt }}{% else %}{{ site.avatar_alt }}{% endif %}">
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.theme.description }}{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:locale" content="{{ site.locale }}">
@@ -18,5 +19,6 @@
 <meta name="twitter:site" content="@{{ site.twitter_username }}">
 <meta name="twitter:creator" content="@{{ site.twitter_username }}">
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.theme.description }}{% endif %}">
-<meta name="twitter:image" content="{% if page.feature-img %}{{ page.feature-img | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.url }}/{{ site.avatar }}{% endif %}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.theme.description }}{% endif %}">
+<meta name="twitter:image" content="{% if page.feature_img %}{{ page.feature_img | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.avatar | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+<meta name="twitter:image:alt" content="{% if page.feature_img_alt %}{{ page.feature_img_alt }}{% else %}{{ site.avatar_alt }}{% endif %}">

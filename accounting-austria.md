@@ -1,7 +1,8 @@
 ---
 layout: page
 title: The DIY Accounting Starter Kit: Austria
-feature-img: "/images/accounting/graphs.png"
+feature_img: "/images/accounting/graphs.png"
+feature_img_alt: "A graph of revenue and expenses over several months"
 excerpt: >
     With this DIY Accounting Starter Kit 🗄📒 you can automatically visualise
     your company's cash flow 📈 and estimate your future taxes and social insurance.

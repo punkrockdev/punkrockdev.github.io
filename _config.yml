@@ -13,6 +13,7 @@ twitter_username: punkrockdev
 github_username:  punkrockdev
 facebook_id: 217439528836908
 avatar: "/images/social.png"
+avatar_alt: "Group of developers and designers sitting at a table during a meeting."
 
 # Build settings
 markdown: kramdown
