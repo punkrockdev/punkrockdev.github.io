@@ -17,7 +17,7 @@ dl, dd, ol, ul, figure {
 
 
 @mixin selected-text {
-    background: #292929;
+    background: $black-color-mid;
     color: #fff;
 }
 *::-moz-selection { @include selected-text }
@@ -26,6 +26,8 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+
+html { background-color: $black-color-mid; }
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;

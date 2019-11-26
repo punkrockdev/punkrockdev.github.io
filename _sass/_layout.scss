@@ -38,7 +38,7 @@
       margin: 0;
       background-color: rgba(255,255,255, .8);
       padding: 5px 20px;
-      color: #292929;
+      color: $black-color-mid;
       display: inline-block;
       margin-bottom: 40px;
     }
@@ -312,7 +312,7 @@ section {
     margin: 0px 0 30px;
     display: inline-block;
     color: #f5f5f5;
-    background-color: #292929;
+    background-color: $black-color-mid;
     width: 200px;
     height: 40px;
     line-height: 40px;
@@ -326,7 +326,7 @@ section {
     transition: background-color .5s ease-in-out;
     &:hover,
     &:focus {
-      background-color: darken(#292929, 50%);
+      background-color: darken($black-color-mid, 50%);
     }
 
     @include media-query($on-laptop) {

@@ -45,7 +45,7 @@
       }
 
       a {
-        color: #292929;
+        color: $black-color-mid;
         text-decoration: none;
         font: {
           size: 20px;
@@ -59,7 +59,7 @@
 
       &-contact {
         a {
-          background-color: #292929;
+          background-color: $black-color-mid;
           padding: 1px 60px;
           display: inline-block;
           color: #fff;

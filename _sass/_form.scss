@@ -12,8 +12,8 @@
 
 @mixin accent-button() {
     color: #fff;
-    border: 1px solid #292929;
-    background: #292929;
+    border: 1px solid $black-color-mid;
+    background: $black-color-mid;
     font-weight: 400;
     font-size: 16px;
     padding: 7px 5px;
@@ -56,7 +56,7 @@ form {
     input, textarea { /* all (text) inputs */
         font: 1em $base-font-family;
         border: none;
-        border-bottom: 2px solid #292929;
+        border-bottom: 2px solid $black-color-mid;
         border-radius: 0;
         padding: 0.3em;
         margin: 0.3em 0;
@@ -66,7 +66,7 @@ form {
         }
         &:focus {
           outline: none;
-          border-bottom: 2px solid #292929;
+          border-bottom: 2px solid $black-color-mid;
         }
     }
     textarea { /* only the description text input */

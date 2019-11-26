@@ -33,7 +33,7 @@
     }
 
     &.light {
-      @include portfolio-item(#fdfdfd, #292929);
+      @include portfolio-item(#fdfdfd, $black-color-mid);
     }
 
     &.dark {

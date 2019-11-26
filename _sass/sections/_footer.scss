@@ -1,6 +1,6 @@
 .site-footer {
     width: 100%;
-    background-color: #292929;
+    background-color: $black-color-mid;
     /* margin: auto; */
 
     .wrapper {
@@ -8,7 +8,7 @@
     }
 
     .footer-bottom-links {
-      background-color: #292929;
+      background-color: $black-color-mid;
       clear: both;
 
       .contact-list {
