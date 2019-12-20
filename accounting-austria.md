@@ -63,7 +63,7 @@ Instructions for submitting improvements are inside the spreadsheet.
         like this should be accessible to everyone in the community.</p>
     </div>
     <div class="col-1-3">
-        <img src="/images/ja.png" class="mugshot">
+        <img src="/images/team/Drazen.jpg" class="mugshot">
     </div>
 </div>
 <div style="clear: left"></div>

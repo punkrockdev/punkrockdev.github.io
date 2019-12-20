@@ -1,5 +1,5 @@
 .site-header {
-  height: 60vh;
+  // height: 60vh;
   position: relative;
 
   [class*='col-'] {
@@ -14,39 +14,10 @@
     transform: translateY(-50%);
     z-index: 12;
   }
-  &-homepage {
-    height: 100vh;
-    overflow: hidden;
-    @include media-query($on-desktop) {
-      height: 75vh;
-    }
-
-    @include media-query($on-laptop) {
-      height: 70vh;
-    }
-
-    @include media-query($on-palm) {
-      height: 50vh;
-    }
-  }
 
   .header-content {
     padding: 0 30px;
   }
-
-  .header__overlay {
-     background-color: rgba(1, 1, 1, 0.44);
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-     position: absolute;
-     z-index: 11;
-     display:none;
-     @include media-query-min($on-desktop + 1) {
-       display: block;
-     }
-   }
 
   .header__fallback-image {
       width: 100%;
@@ -66,9 +37,6 @@
   }
 
   nav {
-    position: absolute;
-    left: 0;
-    right: 0;
     z-index: 99;
     background-color: transparent;
     padding: 30px;
@@ -96,14 +64,50 @@
   //   padding: 7px 20px;
   //   float: right;
   // }
+}
 
-  video {
-    z-index: 9;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    object-fit: cover;
+.site-header-homepage {
+  height: 100vh;
+  overflow: hidden;
+  @include media-query($on-desktop) {
+    height: 75vh;
   }
+
+  @include media-query($on-laptop) {
+    height: 70vh;
+  }
+
+  @include media-query($on-palm) {
+    height: 50vh;
+  }
+
+  .header__overlay {
+     background-color: rgba(1, 1, 1, 0.44);
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: 11;
+     display:none;
+     @include media-query-min($on-desktop + 1) {
+       display: block;
+     }
+   }
+   
+   nav {
+     position: absolute;
+     left: 0;
+     right: 0;
+   }
+  
+   video {
+     z-index: 9;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     object-fit: cover;
+   }
 }
