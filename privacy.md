@@ -5,7 +5,7 @@ title: Privacy Policy
 
 We respect your privacy and this policy explains how we collect and treat any information you give us. You won’t find any complicated legal terms or long passages of unreadable text. We’ve no desire to trick you into agreeing to something you might later regret.
 
-*Latest update: September 10, 2018.*
+_Latest update: September 10, 2018._
 
 ### Our policy covers
 
@@ -67,6 +67,11 @@ The computers we use all have encrypted hard drives and are protected by a passc
 ### How to complain
 
 We take complaints very seriously. If you’ve any reason to complain about the ways we handle your privacy, please contact Dražen Lučanin by email at <hello@punkrockdev.com>. If you’re the letter writing type, send your envelope to our address:
+
+Punk Rock Dev d.o.o.<br/>
+Domobranska 19, 10000 Zagreb, Croatia
+
+or
 
 Punk Rock Dev OÜ<br/>
 Sepapaja 6, Tallinn 15551, Estonia
