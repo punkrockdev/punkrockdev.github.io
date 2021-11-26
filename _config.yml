@@ -1,20 +1,30 @@
-# Site settings
+---
 title: Punk Rock Dev
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: info@punkrockdev.com
-description: > # this means to ignore newlines until "baseurl:"
-  Developing apps with a kick! Punk Rock Dev is an indie web development and
-  data analysis studio that can help you build that app you've always dreamed of…
-baseurl: "" # the subpath of your site, e.g. /blog/
+description: 'Developing apps with a kick! Punk Rock Dev is an indie web development
+  and data analysis studio that can help you build that app you''ve always dreamed
+  of…
+
+'
+baseurl: ''
 hostdomain: punkrockdev.com
-url: "https://punkrockdev.com" # the base hostname & protocol for your site
+url: https://punkrockdev.com
 locale: en_US
 enforce_ssl: punkrockdev.com
 twitter_username: punkrockdev
-github_username:  punkrockdev
+github_username: punkrockdev
 facebook_id: 217439528836908
 avatar: "/images/social.png"
-avatar_alt: "Group of developers and designers sitting at a table during a meeting."
-
-# Build settings
+avatar_alt: Group of developers and designers sitting at a table during a meeting.
 markdown: kramdown
-exclude: [node_modules, gulpfile.js]
+exclude:
+- node_modules
+- gulpfile.js

@@ -1,17 +1,11 @@
 ---
-# IMPORTANT - this file's content is not used, only the meta-data
-# use home.html for the content instead!
-#
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
 title: Punk Rock Dev – Developing apps with a kick!
+layout: home
 show_video: true
-excerpt: >
-    An indie web development and data analysis studio that can help you build
-    that app you've always dreamed of.
-# switch to default to render this content
+excerpt: 'An indie web development and data analysis studio that can help you build
+  that app you''ve always dreamed of.
+
+'
 ---
 
 ## IDEAS, DEVELOPMENT & PUNK ROCK

@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Privacy Policy
+layout: page
 ---
 
 We respect your privacy and this policy explains how we collect and treat any information you give us. You won’t find any complicated legal terms or long passages of unreadable text. We’ve no desire to trick you into agreeing to something you might later regret.
