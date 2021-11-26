@@ -14,7 +14,7 @@ description: 'Developing apps with a kick! Punk Rock Dev is an indie web develop
   of…
 
 '
-baseurl: ''
+baseurl: 
 hostdomain: punkrockdev.com
 url: https://punkrockdev.com
 locale: en_US
