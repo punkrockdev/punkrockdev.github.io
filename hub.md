@@ -2,6 +2,10 @@
 title: ŠenoaHub
 date: 2021-11-26 13:51:00 Z
 layout: page
+
+feature_img: '/images/hub/office.jpg'
+feature_img_alt: Our spacious office rooms
+excerpt: 'ŠenoaHub is a shared office in the centre of Zagreb. We offer desk and meeting room rental. A swanky office for your creative side!'
 ---
 
 Welcome to ŠenoaHub!
