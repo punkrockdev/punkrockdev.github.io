@@ -14,7 +14,7 @@ Check out the vibes on [Instagram](https://www.instagram.com/senoahub/).
 
 ## The space
 
-ŠenoaHub is a 120 m2 shared office in the centre of Zagreb, (close to the main train station and the park Tomislavac). It consists of two large rooms we use for work and a smaller meeting rooms which you can book when needed. We also have a kitchen and dining room which you can help yourself to.
+ŠenoaHub is a 120 m2 shared office in the centre of Zagreb (close to the main train station and the park Tomislavac). It consists of two large rooms we use for work and a smaller meeting room which you can reserve when needed. There's also a kitchen and dining room which you can help yourself to.
 
 ![Our spacious office rooms](/images/hub/office.jpg)
 
