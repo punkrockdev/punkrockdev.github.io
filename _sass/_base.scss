@@ -128,11 +128,9 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    padding-top: 4em;
+    color: $grey-color-dark;
+    padding-top: 2px;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
     font-style: italic;
 
     > :last-child {

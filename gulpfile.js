@@ -11,7 +11,7 @@ gulp.task('serve', function () {
     gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
 
-// create .webp version of the images
+create .webp version of the images
 gulp.task('images', function () {
   return gulp.src('./images/**/*.{jpg,png,tif}')
     .pipe(webp({preset: 'photo', quality: 90, method: 6, lossless: true}))
