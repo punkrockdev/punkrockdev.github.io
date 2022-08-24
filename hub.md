@@ -74,9 +74,11 @@ Of course, all options include WiFi 📡 and coffee ☕️. Office dogs are very
 Coworking is all about meeting other like-minded creatives and sharing .
 Here's what people who've worked in ŠenoaHub have to say about the experience:
 
-> "Beautiful space, cool people"
+> "Beautiful space, cool people!"
 >
 > – Tara Vučetić, [Biotech Materials](https://biotechmaterials.eu/)
+
+---
 
 > "Best crew ever! I was working here at a coworking desk for Rent a Local
 > and I couldn't have loved it more. Talk about "location, location, location"!
@@ -87,6 +89,8 @@ Here's what people who've worked in ŠenoaHub have to say about the experience:
 > would recommend to everyone, 10/10. Thank you, Dražen, for everything!"
 >
 > – Maja Osmančević, [Rent a Local](https://rentalocal.eu/)
+
+---
 
 > "Bright and cozy coworking space! It’s equiped with everything you need: stable network, kitchen, conference room, nice views AND it’s per-friendly. Lovely people and atmosphere in the very centre of Zagreb. I recommend it to everyone, be it for a couple of days or long-term!"
 >

@@ -180,7 +180,10 @@ p {
 
 .page-content {
   .page-row {
-    padding: 50px;
+    padding: 20px;
+    @include media-query-min($on-laptop) {
+        padding: 50px;
+    }
     overflow: auto;
     clear: both;
   }
