@@ -1,6 +1,37 @@
+.footer-image {
+  // float: left;
+  padding-top: 60vh;
+  width: 100%;
+  font-size: $small-font-size;
+  @include media-query($on-desktop) { font-weight: 900; }
+  @include media-query($on-laptop) {
+      font-size: $small-font-size-laptop;
+  }
+  @include media-query($on-palm) {
+      font-size: $small-font-size-mobile;
+  }
+
+  a, i, h2, p, label {
+    color: #f5f5f5;
+    font-weight: 300;
+ }
+
+  background-image: linear-gradient(rgba(1,1,1,.02),rgba(1,1,1,.02)),url("../images/footer.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  @include media-query($on-laptop) {
+    padding-top: 50vh;
+  }
+  @include media-query($on-palm) {
+    padding-top: 35vh;
+  }
+}
+
 .site-footer {
     width: 100%;
     background-color: $black-color-mid;
+    padding: 20px 0;
     /* margin: auto; */
 
     .wrapper {
@@ -33,34 +64,18 @@
       margin: 0;
     }
 
-    .footer-content {
-        float: left;
-        padding-top: 60vh;
-        width: 100%;
-        font-size: $small-font-size;
-        @include media-query($on-desktop) { font-weight: 900; }
-        @include media-query($on-laptop) {
-            font-size: $small-font-size-laptop;
-        }
-        @include media-query($on-palm) {
-            font-size: $small-font-size-mobile;
-        }
-
-        a, i, h2, p, label {
-          color: #f5f5f5;
-          font-weight: 300;
-       }
-
-        background-image: linear-gradient(rgba(1,1,1,.02),rgba(1,1,1,.02)),url("../images/footer.jpg");
-        background-size: cover;
-        background-position: top center;
-        background-repeat: no-repeat;
-        @include media-query($on-laptop) {
-          padding-top: 50vh;
-        }
-        @include media-query($on-palm) {
-          padding-top: 35vh;
-        }
+    .logo {
+      display: block;
+      height: 40px;
+      @include media-query-min($on-desktop) {
+        height: 60px;
+      }
+      background-image: url(../images/logo.png);
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: $black-color-mid;
+      margin: auto;
     }
 
     .footer-col-wrapper {

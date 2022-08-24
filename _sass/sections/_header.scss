@@ -49,6 +49,10 @@
     display: block;
     width: 10rem;
     height: 40px;
+    @include media-query-min($on-laptop) {
+      width: 20rem;
+      height: 80px;
+    }
     background-image: url('../images/logo.png');
     background-size: contain;
     background-position: center center;
