@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-ext-replace": "^0.3.0",
     "gulp-image": "^4.3.0",
     "gulp-shell": "^0.7.0",
