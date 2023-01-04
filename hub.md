@@ -100,13 +100,13 @@ Here's what people who've worked in ŠenoaHub have to say about the experience:
 
 Here is the ŠenoaHub price list:
 
-| Service       | Price (incl. VAT) | Price (incl. VAT) in EUR |
-| ------------- | ----------------- | ------------------------ |
-| Flexible desk | 200 HRK / day     | 26.54 EUR / day          |
-| Fixed desk*   | 1875 HRK / month  | 248.86 EUR / month       |
-| Meeting room  | 125 HRK / hour    | 16.59 EUR / hour         |
+| Service       | Price (incl. VAT)  | Price (incl. VAT) in HRK |
+| ------------- | ------------------ | ------------------------ |
+| Flexible desk | 30 EUR / day       | 226.04 HRK / day         |
+| Fixed desk*   | 250 EUR / month    | 1883.63 HRK / month      |
+| Meeting room  | 20  EUR / hour     | 150.69 HRK / hour        |
 
-`(1 EUR = 7.53450 HRK, fixed conversion fee)`
+`(1 EUR = 7.53450 HRK, fixed conversion rate)`
 
 \* minimum 2-month contract for fixed desks
 
